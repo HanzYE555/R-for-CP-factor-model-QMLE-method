@@ -331,7 +331,7 @@ simulate_data_int <- function(p, q, d, Tn, s) {
   list(A0 = A0, B0 = B0, M_x0 = M_x0, diag_Se_entry0 = diag_Se_entry0, M_y = M_y, Ylist = Ylist)
 }
 
-fit_qmle_bdry <- function(M_y, p, q, d, init, maxit = 50) {
+fit_qmle_bdry <- function(M_y, p, q, d, init, maxit = 180) {
   Ainit <- init$A
   Binit <- init$B
   M_x_init <- init$M_x
@@ -368,7 +368,7 @@ fit_qmle_bdry <- function(M_y, p, q, d, init, maxit = 50) {
   )
 }
 
-fit_qmle_int <- function(M_y, p, q, d, init, maxit = 50) {
+fit_qmle_int <- function(M_y, p, q, d, init, maxit = 80) {
   Ainit <- init$A
   Binit <- init$B
   M_x_init <- init$M_x
@@ -418,7 +418,7 @@ extract_errors <- function(one_res) {
   )
 }
 
-run_once_case <- function(case = c("bdry", "int"), p = 20, q = 20, d = 4, Tn = 100, s = 1, maxit = 50) {
+run_once_case <- function(case = c("bdry", "int"), p = 20, q = 20, d = 5, Tn = 100, s = 1, maxit = 80) {
   case <- match.arg(case)
 
   sim <- switch(case,
@@ -467,7 +467,7 @@ run_once_case <- function(case = c("bdry", "int"), p = 20, q = 20, d = 4, Tn = 1
   )
 }
 
-run_many <- function(case, p, q, d, Tn, seeds, maxit = 50, verbose = TRUE) {
+run_many <- function(case, p, q, d, Tn, seeds, maxit = 80, verbose = TRUE) {
   out_mat <- matrix(NA_real_, nrow = length(seeds), ncol = 5)
   colnames(out_mat) <- c("conv_code", "A_relF_err", "B_relF_err", "Se_relRMSE", "Mx_relF_err")
 
@@ -497,8 +497,8 @@ get_arg <- function(flag, default = NULL) {
 
 if (length(args) == 0) {
   cat("Usage:\n")
-  cat("  Rscript scripts/run_sim.R --case bdry --p 60 --q 60 --T 100 --d 4 --seeds 1,2,3,4,5 --maxit 30 --out out/bdry_p60_q60_T100.csv\n")
-  cat("  Rscript scripts/run_sim.R --case int  --p 60 --q 60 --T 100 --d 4 --seeds 1,2,3,4,5 --maxit 30 --out out/int_p60_q60_T100.csv\n")
+  cat("  Rscript scripts/run_sim.R --case bdry --p 20 --q 20 --T 100 --d 5 --seeds 1,2,3,4,5 --maxit 180 --out out/bdry_p20_q20_T100.csv\n")
+  cat("  Rscript scripts/run_sim.R --case int  --p 20 --q 20 --T 100 --d 5 --seeds 1,2,3,4,5 --maxit 30 --out out/int_p20_q20_T100.csv\n")
   quit(status = 0)
 }
 
@@ -506,19 +506,19 @@ case  <- get_arg("--case", "bdry")
 p     <- as.integer(get_arg("--p"))
 q     <- as.integer(get_arg("--q"))
 Tn    <- as.integer(get_arg("--T"))
-d     <- as.integer(get_arg("--d", "4"))
+d     <- as.integer(get_arg("--d", "5"))
 seeds <- get_arg("--seeds", "1,2,3,4,5")
-maxit <- as.integer(get_arg("--maxit", "50"))
+maxit <- as.integer(get_arg("--maxit", "80"))
 out   <- get_arg("--out", sprintf("out/%s_p%d_q%d_T%d.csv", case, p, q, Tn))
 
 if (is.na(p) || is.na(q) || is.na(Tn)) {
-  stop("必须提供 --p --q --T，例如 --case bdry --p 60 --q 60 --T 100")
+  stop("please provide --p --q --T，e.g. --case bdry --p 20 --q 20 --T 100")
 }
 
 case <- tolower(case)
 if (!case %in% c("bdry", "int")) stop("--case must be one of: bdry, int")
 
-if (case == "bdry" && d > 5) stop("Boundary case requires d <= 5 (A_r, B_r are 5x5).")
+if (case == "bdry" && d > 5) stop("Boundary case requires d = 5 (A_r, B_r are 5x5).")
 
 seed_vec <- as.integer(strsplit(seeds, ",")[[1]])
 agg <- run_many(case = case, p = p, q = q, d = d, Tn = Tn, seeds = seed_vec, maxit = maxit, verbose = TRUE)
