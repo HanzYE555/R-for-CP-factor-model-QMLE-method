@@ -15,29 +15,44 @@
 #   - vec(M), invvec(v, p, q): vectorize helpers
 #
 # ============================================================
-R_t <- vector("list", length = 696)
-for (t in 1:696) {
-  R_t[[t]] <- 100 * matrix(E_capm[t,],nrow = 10)
-}
-R_arr_pqn <- simplify2array(R_t)          # p x q x Tn
-R_npq <- aperm(R_arr_pqn, c(3, 1, 2))           # Tn x p x q  (n x p x q)
+#!/usr/bin/env Rscript
 
-eig_real <- eigen(t(E_capm) %*% E_capm *(10000/696))$values
+suppressPackageStartupMessages({
+  library(stats)
+})
 
-## ===== Parallel analysis for latent dimension (CAPM residuals) =====
-## Assumes: E_capm is a numeric matrix with dim 696 x 100 (T x N)
+# -------------------------
+# Config
+# -------------------------
+in_rds  <- file.path("data", "processed", "ten_by_ten_prepared.rds")
+out_dir <- file.path("outputs", "parallel")
+out_rds <- file.path(out_dir, "parallel_analysis_results.rds")
+out_png <- file.path(out_dir, "parallel_analysis_real_vs_null95.png")
+
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+
+# -------------------------
+# Load
+# -------------------------
+dat <- readRDS(in_rds)
+E_capm <- dat$E_capm
+
 stopifnot(is.matrix(E_capm), is.numeric(E_capm))
-stopifnot(nrow(E_capm) == 696, ncol(E_capm) == 100)
-
 Tn <- nrow(E_capm)
 Nn <- ncol(E_capm)
 
-# Helper: eigenvalues of covariance, optionally scaled to "% returns" units
+cat(sprintf("Loaded E_capm: T=%d, N=%d\n", Tn, Nn))
+
+# If you really want to enforce 10x10:
+if (Nn != 100) stop("Expected N=100 portfolios but got N=", Nn, call. = FALSE)
+
+# -------------------------
+# Helper
+# -------------------------
 eig_of <- function(X, scale_to_percent = TRUE) {
-  # center columns (residuals should already be ~0 mean, but do it anyway)
   Xc <- scale(X, center = TRUE, scale = FALSE)
-  S  <- cov(Xc)  # N x N, uses 1/(T-1)
-  if (scale_to_percent) S <- S * 10000  # (x100)^2
+  S  <- cov(Xc)  # uses 1/(T-1)
+  if (scale_to_percent) S <- S * 10000
   eigen(S, symmetric = TRUE, only.values = TRUE)$values
 }
 
@@ -45,20 +60,18 @@ eig_of <- function(X, scale_to_percent = TRUE) {
 eig_real <- eig_of(E_capm, scale_to_percent = TRUE)
 
 # 2) Null eigenvalues via column-wise time permutation
-B <- 500  # increase to 1000+ if you want smoother thresholds
+B <- 500
 eig_null <- matrix(NA_real_, nrow = B, ncol = Nn)
 
 set.seed(1)
-for (b in 1:B) {
+for (b in seq_len(B)) {
   Xb <- E_capm
-  # independently permute time within each asset/portfolio column
-  for (j in 1:Nn) {
-    Xb[, j] <- sample(Xb[, j], size = Tn, replace = FALSE)
-  }
+  for (j in seq_len(Nn)) Xb[, j] <- sample(Xb[, j], size = Tn, replace = FALSE)
   eig_null[b, ] <- eig_of(Xb, scale_to_percent = TRUE)
+  if (b %% 50 == 0) cat(sprintf("perm %d / %d\n", b, B))
 }
 
-# 3) Thresholds and k-hat at different confidence levels
+# 3) Thresholds and k-hat
 thr90 <- apply(eig_null, 2, quantile, probs = 0.90, na.rm = TRUE)
 thr95 <- apply(eig_null, 2, quantile, probs = 0.95, na.rm = TRUE)
 thr99 <- apply(eig_null, 2, quantile, probs = 0.99, na.rm = TRUE)
@@ -68,9 +81,30 @@ k_out <- c(
   k95 = sum(eig_real > thr95),
   k99 = sum(eig_real > thr99)
 )
+
 print(k_out)
 
-# 4) Plot: real vs null threshold (95%)
+cross_k <- which(eig_real <= thr95)[1]
+cat("First k where eig_real <= thr95:", cross_k, "\n")
+
+# 4) Save results
+saveRDS(list(
+  eig_real = eig_real,
+  eig_null = eig_null,
+  thr90 = thr90,
+  thr95 = thr95,
+  thr99 = thr99,
+  k_out = k_out,
+  cross_k_95 = cross_k,
+  B = B,
+  in_rds = in_rds
+), out_rds)
+cat("Saved: ", out_rds, "\n", sep = "")
+
+# -------------------------
+# Plot (works under Rscript by saving to PNG)
+# -------------------------
+png(out_png, width = 1200, height = 800, res = 150)
 op <- par(mar = c(4,4,2,1))
 plot(eig_real, type = "b", pch = 16, cex = 0.7,
      xlab = "k (eigenvalue rank)", ylab = "eigenvalue (cov, % units)",
@@ -79,9 +113,7 @@ lines(thr95, type = "b", pch = 1, col = "red", cex = 0.7)
 legend("topright", legend = c("real", "null 95%"),
        col = c("black", "red"), lty = 1, pch = c(16,1), bty = "n")
 par(op)
+dev.off()
 
-# Optional: where do they cross?
-cross_k <- which(eig_real <= thr95)[1]
-cat("First k where eig_real <= thr95:", cross_k, "\n")
-
+cat("Saved plot: ", out_png, "\n", sep = "")
 
