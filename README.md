@@ -141,7 +141,7 @@ dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 stopifnot(d %in% 1:20)
 stopifnot(var_ic %in% c("AIC", "BIC"))
 ```
-
+you can use the following R code example to get results: 
 ```r
 # assume you already ran prepare_data.R and loaded/created R_npq in the session
 
@@ -165,7 +165,10 @@ dev.off()
 par(mfrow=c(1,1))
 ```
 
-
+We also provide a choice for bash: 
+```bash
+Rscript rolling_entry.R --d=5 --S_run=40 --out_dir=outputs
+```
 
 
 
