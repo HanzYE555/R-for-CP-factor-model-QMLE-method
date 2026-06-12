@@ -142,8 +142,28 @@ stopifnot(d %in% 1:20)
 stopifnot(var_ic %in% c("AIC", "BIC"))
 ```
 
+```r
+# assume you already ran prepare_data.R and loaded/created R_npq in the session
 
+# all windows
+res_rec_2 <- run_one(R_npq, d = 2, S_run = NULL)
 
+# first 40 windows
+res_rec_5_40 <- run_one(R_npq, d = 5, S_run = 40)
+
+# eigengap plot for d=5, first 40 windows (QMLE A/B)
+out_dir <- "outputs"
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+
+png(file.path(out_dir, "eigengap_logratio_AB_d5_S40.png"), width=1200, height=900, res=150)
+par(mfrow=c(2,1), mar=c(4,4,3,1))
+plot_eigengap_logratio(res_rec_5_40$store$sv_A_q,
+                       main = "QMLE A: log(s_k/s_{k+1}) (d=5, S_run=40)")
+plot_eigengap_logratio(res_rec_5_40$store$sv_B_q,
+                       main = "QMLE B: log(s_k/s_{k+1}) (d=5, S_run=40)")
+dev.off()
+par(mfrow=c(1,1))
+```
 
 
 
