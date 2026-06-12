@@ -819,7 +819,7 @@ if (!is.null(S_run)) {
 
 # ---- wrapper: paper section runner ----
 run_one <- function(R_npq, d, train_T=456, horizon=c(1,2),
-                    pmax_var=24, var_ic="AIC", stable_thresh = stable_thresh, qmle_maxit=120,
+                    pmax_var=24, var_ic="AIC", stable_thresh = 0.999, qmle_maxit=120,
                     verbose_every=20, use_warm_start=TRUE,
                     S_run=NULL) {
   compare_cpmts_vs_qmle_rolling_rrmse(
