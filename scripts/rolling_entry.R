@@ -837,13 +837,6 @@ run_one <- function(R_npq, d, train_T=456, horizon=c(1,2),
   )
 }
 
-# For example: take d=2 and all windows
-res_rec_2 <- run_one(R_npq, d=2, S_run = NULL)
-
-# For example: take d=5 and 40 windows
-res_rec_5_40 <- run_one(R_npq, d=5, S_run = 40)
-
-
 
 # ---- eigengap plot helper (log ratio with baseline log(e)=1) ----
 plot_eigengap_logratio <- function(sv_mat, main, ref_log = 1,
@@ -877,15 +870,30 @@ plot_eigengap_logratio <- function(sv_mat, main, ref_log = 1,
 
   invisible(list(logratio = logr, ratio = ratio))
 }
-# ---- example: d=5, windows=40 ----
 
-png(file.path(out_dir, "eigengap_logratio_AB_d5_S40.png"), width=1200, height=900, res=150)
+
+# ---- run + save figure ----
+res <- run_one(R_npq,
+               d = d,
+               train_T = train_T,
+               pmax_var = pmax_var,
+               var_ic = var_ic,
+               stable_thresh = stable_thr,
+               qmle_maxit = qmle_maxit,
+               verbose_every = verbose_ev,
+               S_run = S_run)
+
+fname <- sprintf("eigengap_logratio_AB_d%d_S%s.png", d, if (is.null(S_run)) "ALL" else S_run)
+fpath <- file.path(out_dir, fname)
+
+png(fpath, width=1200, height=900, res=150)
 par(mfrow=c(2,1), mar=c(4,4,3,1))
-plot_eigengap_logratio(res_rec_5_40$store$sv_A_q,
-                       main = "QMLE A: log(s_k/s_{k+1}) (d=5, S_run=40)",
+plot_eigengap_logratio(res$store$sv_A_q,
+                       main = sprintf("QMLE A: log(s_k/s_{k+1}) (d=%d, S_run=%s)", d, if (is.null(S_run)) "ALL" else S_run),
                        ref_log = 1)
-plot_eigengap_logratio(res_rec_5_40$store$sv_B_q,
-                       main = "QMLE B: log(s_k/s_{k+1}) (d=5, S_run=40)",
+plot_eigengap_logratio(res$store$sv_B_q,
+                       main = sprintf("QMLE B: log(s_k/s_{k+1}) (d=%d, S_run=%s)", d, if (is.null(S_run)) "ALL" else S_run),
                        ref_log = 1)
 dev.off()
-par(mfrow=c(1,1))
+
+cat(sprintf("Saved: %s\n", fpath))
