@@ -28,14 +28,13 @@ as_num <- function(x, default = NA_real_) {
 # 1) User-configurable (reviewer can override by CLI)
 # ============================================================
 
-d         <- as_int(get_arg("d", "4"))              # latent dimension
+d         <- as_int(get_arg("d", "2"))              # latent dimension
 train_T   <- as_int(get_arg("train_T", "456"))
 horizon   <- c(1, 2)
 
 # rolling window control
-s_start   <- as_int(get_arg("s_start", "1"))
-n_windows <- get_arg("n_windows", NULL)
-n_windows <- if (is.null(n_windows) || n_windows == "") NULL else as_int(n_windows)
+S_run <- get_arg("S_run", NULL)
+
 
 # VAR + stability
 pmax_var      <- as_int(get_arg("pmax_var", "24"))
@@ -56,7 +55,7 @@ stopifnot(var_ic %in% c("AIC", "BIC"))
 cat("============================================================\n")
 cat("Rolling CP.Unified vs QMLE\n")
 cat(sprintf("d=%d, train_T=%d, horizon={%s}\n", d, train_T, paste(horizon, collapse = ",")))
-cat(sprintf("s_start=%d, n_windows=%s\n", s_start, if (is.null(n_windows)) "ALL" else n_windows))
+cat(sprintf("S_run=%s\n", if (is.null(S_run)) "ALL" else S_run))
 cat(sprintf("VAR: pmax=%d, IC=%s, stable_thresh=%.4f\n", pmax_var, var_ic, stable_thresh))
 cat(sprintf("QMLE: maxit=%d\n", qmle_maxit))
 cat("============================================================\n")
