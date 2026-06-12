@@ -27,7 +27,6 @@ as_num <- function(x, default = NA_real_) {
 # ============================================================
 # 1) User-configurable (reviewer can override by CLI)
 # ============================================================
-data_path <- get_arg("data", file.path("data", "processed", "ten_by_ten_prepared.rds"))
 
 d         <- as_int(get_arg("d", "4"))              # latent dimension
 train_T   <- as_int(get_arg("train_T", "456"))
@@ -56,7 +55,6 @@ stopifnot(var_ic %in% c("AIC", "BIC"))
 
 cat("============================================================\n")
 cat("Rolling CP.Unified vs QMLE\n")
-cat(sprintf("data: %s\n", data_path))
 cat(sprintf("d=%d, train_T=%d, horizon={%s}\n", d, train_T, paste(horizon, collapse = ",")))
 cat(sprintf("s_start=%d, n_windows=%s\n", s_start, if (is.null(n_windows)) "ALL" else n_windows))
 cat(sprintf("VAR: pmax=%d, IC=%s, stable_thresh=%.4f\n", pmax_var, var_ic, stable_thresh))
@@ -64,6 +62,26 @@ cat(sprintf("QMLE: maxit=%d\n", qmle_maxit))
 cat("============================================================\n")
 
 # ============================================================
+
+in_rds  <- file.path("data", "processed", "ten_by_ten_prepared.rds")
+dat <- readRDS(in_rds)
+ 
+E_capm <- dat$E_capm
+stopifnot(is.matrix(E_capm), is.numeric(E_capm))
+Tn <- nrow(E_capm)
+Nn <- ncol(E_capm)
+
+cat(sprintf("Loaded E_capm: T=%d, N=%d\n", Tn, Nn))
+
+R_t <- vector("list", length = Tn)
+for (t in 1:Tn) {
+  R_t[[t]] <- 100 * matrix(E_capm[t,],nrow = 10)
+}
+
+R_arr_pqn <- simplify2array(R_t)          # p x q x Tn
+R_npq <- aperm(R_arr_pqn, c(3, 1, 2))           # Tn x p x q  (n x p x q)
+
+
 safe_sd <- function(x) {
   s <- sd(x, na.rm = TRUE)
   if (!is.finite(s) || s < 1e-12) return(1.0)
@@ -552,13 +570,21 @@ compare_cpmts_vs_qmle_rolling_rrmse <- function(
     use_warm_start = TRUE,
     store_cp = FALSE,           # whether also store CP A,B and singular values
     eps_denom = 1e-12,          # avoid divide-by-zero in denominators
-    store_abs_errors = TRUE     # store absolute RMSE/MAE and some scale diagnostics
+    store_abs_errors = TRUE,     # store absolute RMSE/MAE and some scale diagnostics
+    S_run = NULL
 ) {
   Tn <- dim(R_npq)[1]; p <- dim(R_npq)[2]; q <- dim(R_npq)[3]
   stopifnot(train_T >= 2, train_T < Tn)
   
   # Rolling: estimation window is [s, t_end] with fixed length train_T
-  S <- Tn - train_T
+  S_full <- Tn - train_T          # full number of possible windows
+  S  <- S_full                # number actually run
+
+if (!is.null(S_run)) {
+  S_run <- as.integer(S_run)
+  stopifnot(is.finite(S_run), S_run >= 1)
+  S <- min(S_full, S_run)
+}
   
   out <- list(
     d = d, train_T = train_T, T = Tn, S = S,
@@ -791,3 +817,76 @@ compare_cpmts_vs_qmle_rolling_rrmse <- function(
   
   out
 }
+
+# ---- wrapper: paper section runner ----
+run_one <- function(R_npq, d, train_T=456, horizon=c(1,2),
+                    pmax_var=24, var_ic="AIC", stable_thresh = stable_thresh, qmle_maxit=120,
+                    verbose_every=20, use_warm_start=TRUE,
+                    S_run=NULL) {
+  compare_cpmts_vs_qmle_rolling_rrmse(
+    R_npq = R_npq,
+    d = d,
+    train_T = train_T,
+    horizon = horizon,
+    pmax_var = pmax_var,
+    var_ic = var_ic,
+    stable_thresh = stable_thresh,
+    qmle_maxit = qmle_maxit,
+    verbose_every = verbose_every,
+    use_warm_start = use_warm_start,
+    S_run = S_run
+  )
+}
+
+# For example: take d=2 and all windows
+res_rec_2 <- run_one(R_npq, d=2, S_run = NULL)
+
+# For example: take d=5 and 40 windows
+res_rec_5_40 <- run_one(R_npq, d=5, S_run = 40)
+
+
+
+# ---- eigengap plot helper (log ratio with baseline log(e)=1) ----
+plot_eigengap_logratio <- function(sv_mat, main, ref_log = 1,
+                                   legend_pos = "topright",
+                                   legend_title = "ratio index k") {
+  stopifnot(is.matrix(sv_mat), ncol(sv_mat) >= 2)
+  S <- nrow(sv_mat); d <- ncol(sv_mat)
+  K <- d - 1L
+
+  ratio <- sv_mat[, 1:K, drop=FALSE] / pmax(sv_mat[, 2:d, drop=FALSE], 1e-300)
+  logr  <- log(ratio)
+
+  cols <- seq_len(K)  # matplot 默认用 1:K 作为颜色索引也行，这里显式写出来
+
+  matplot(
+    x = seq_len(S), y = logr,
+    type = "l", lty = 1, lwd = 1.7,
+    col = cols,
+    xlab = "rolling window index",
+    ylab = "log(s_k/s_{k+1})",
+    main = main
+  )
+  abline(h = ref_log, col = "gray40", lty = 2, lwd = 2)  # baseline: log(e)=1
+
+  legend(
+    legend_pos,
+    legend = paste0("k = ", 1:K, "  (log s", 1:K, "/s", 2:(K+1), ")"),
+    col = cols, lty = 1, lwd = 1.7, bty = "n",
+    title = legend_title, cex = 0.9
+  )
+
+  invisible(list(logratio = logr, ratio = ratio))
+}
+# ---- example: d=5, windows=40 ----
+
+png(file.path(out_dir, "eigengap_logratio_AB_d5_S40.png"), width=1200, height=900, res=150)
+par(mfrow=c(2,1), mar=c(4,4,3,1))
+plot_eigengap_logratio(res_rec_5_40$store$sv_A_q,
+                       main = "QMLE A: log(s_k/s_{k+1}) (d=5, S_run=40)",
+                       ref_log = 1)
+plot_eigengap_logratio(res_rec_5_40$store$sv_B_q,
+                       main = "QMLE B: log(s_k/s_{k+1}) (d=5, S_run=40)",
+                       ref_log = 1)
+dev.off()
+par(mfrow=c(1,1))
