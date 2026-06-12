@@ -7,7 +7,7 @@ This is the R.code for simulation (int/bdry) and real data analysis via QMLE of 
 This repository provides a command-line interface (CLI) to run the simulation script:
 
 - Script path: `scripts/run_sim.R`
-- How to run: open a terminal at the repository root (same level as `scripts/`) and run `Rscript ...`
+
 
 
 ### Arguments
@@ -57,7 +57,9 @@ Download the ZIP files manually from the official data library (to avoid redistr
 #### Build the processed dataset
 From the repository root, run:
 
-```bash  `Rscript scripts/prepare_data.R`
+```bash  
+Rscript scripts/prepare_data.R
+```
 
 This creates:
 - `data/processed/ten_by_ten_prepared.rds`
@@ -70,3 +72,95 @@ The RDS contains:
 - RF: risk-free rate (decimal)
 - E_capm: CAPM residuals of portfolio excess returns on MktRF (T×100, decimal)
 - colnames_10x10: portfolio column names
+
+
+
+
+
+
+## Reproducibility: Parallel Analysis + Rolling (CP.Unified vs QMLE)
+
+This repo contains two scripts for the experiments in the same paper section:
+
+1. **Parallel analysis** (real vs null, with 95% threshold).
+2. **Rolling comparison** (CP.Unified vs QMLE), including rolling-window control and QMLE/VAR settings.
+
+Both workflows require the data-prep step first.
+
+---
+
+## 1) Parallel analysis (real vs null, 95%)
+
+### Step 0: prepare data (required)
+```bash 
+Rscript prepare_data.R
+```
+### Step 1: run parallel analysis
+```bash
+Rscript parallel_analysis_entry.R
+```
+
+#### Output 
+This produces a figure similar to:
+- `parallel analysis real vs null 95%` (saved under `outputs/parallel`)
+
+## 2) Rolling: CP.Unified vs QMLE (with rolling eigengap-ready outputs)
+
+### Step 0: prepare data (required)
+```bash
+Rscript prepare_data.R
+```
+### Step 1: run rolling entry
+```bash
+Rscript rolling_entry.R
+```
+
+#### Parameters (command line)
+`rolling_entry.R` reads the following arguments (defaults shown are the script defaults):
+```r
+d       <- as_int(get_arg("d", "2"))      # latent dimension, suggested latent dimension: d\in [2,6]
+train_T <- as_int(get_arg("train_T", "456"))
+horizon <- c(1, 2)
+
+# rolling window control
+S_run <- get_arg("S_run", NULL)           # NULL => run ALL windows; otherwise run first S_run windows
+
+# VAR + stability
+pmax_var      <- as_int(get_arg("pmax_var", "24"))
+var_ic        <- get_arg("var_ic", "AIC") # "AIC" or "BIC"
+stable_thresh <- as_num(get_arg("stable_thresh", "0.999"))
+
+# QMLE
+qmle_maxit <- as_int(get_arg("qmle_maxit", "120"))
+
+# output + verbosity
+verbose_every <- as_int(get_arg("verbose_every", "20"))
+out_dir <- get_arg("out_dir", "outputs")
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+
+stopifnot(d %in% 1:20)
+stopifnot(var_ic %in% c("AIC", "BIC"))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
