@@ -33,10 +33,11 @@ int case: recommended --maxit 80
 bdry case: recommended --maxit 150 to 200
 
 ### Example Commands (Copy & Run)
+```bash
 Rscript scripts/run_sim.R --case int --p 5 --q 5 --T 50  --d 4 --seeds 1,2,3,4,5 --maxit 80 --out out/int_p5_q5_T50.csv
 
 Rscript scripts/run_sim.R --case bdry --p 5 --q 5 --T 50 --d 5 --seeds 1,2,3,4,5 --maxit 180 --out out/bdry_p5_q5_T50.csv
-
+```
 ## REAL DATA ANALYSIS
 ### Data (Fama–French, monthly)
 
