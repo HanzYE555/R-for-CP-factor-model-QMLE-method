@@ -28,9 +28,10 @@ To quickly verify that error metrics decrease as T increases, we recommend using
 --p,q∈{5,10,20}
 --T∈{50,100,200}
 Suggested --d 5 (for bdry, make sure d = 5)
-Suggested iteration budgets
-int case: recommended --maxit 80
-bdry case: recommended --maxit 150 to 200
+Suggested iteration budgets: 
+int case recommended --maxit 80;
+
+bdry case recommended --maxit 150 to 200
 
 ### Example Commands (Copy & Run)
 ```bash
