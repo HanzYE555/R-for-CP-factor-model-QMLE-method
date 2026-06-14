@@ -27,8 +27,10 @@ The output is a CSV file containing results for each seed plus one aggregated (a
 To quickly verify that error metrics decrease as T increases, we recommend using small dimensions: 
 --p,q∈{5,10,20}
 --T∈{50,100,200}. 
-Suggested --d 5 (for bdry, make sure d = 5)\\
+Suggested --d 5 (for bdry, make sure d = 5)
+
 Suggested iteration budgets: 
+
 int case recommended --maxit 80;
 
 bdry case recommended --maxit 150 to 200
