@@ -117,3 +117,119 @@ dev.off()
 
 cat("Saved plot: ", out_png, "\n", sep = "")
 
+## ===== Bai & Ng (2002) Information Criteria for number of factors =====
+stopifnot(is.matrix(E_capm), is.numeric(E_capm))
+stopifnot(nrow(E_capm) == 696, ncol(E_capm) == 100)
+
+Tn <- nrow(E_capm)
+Nn <- ncol(E_capm)
+
+## Optional sanity check: your R_t construction is consistent with E_capm (scaled by 100)
+## (This is optional; comment out if you don't need it.)
+if (exists("R_t")) {
+  stopifnot(length(R_t) == Tn)
+  X_from_Rt <- do.call(rbind, lapply(R_t, as.vector))  # 696 x 100
+  # R_t is 100 * matrix(E_capm[t,], 10x10) so vector is 100*E_capm[t,] in column-major order.
+  # Your E_capm[t,] already corresponds to that vector order (as you constructed it), so:
+  if (max(abs(X_from_Rt - (E_capm * 100))) > 1e-8) {
+    warning("R_t does not match E_capm*100 exactly (check ordering). Proceeding with E_capm anyway.")
+  }
+}
+
+## Core: compute Bai-Ng IC for k=0..kmax
+bai_ng_ic <- function(X, kmax = 20, standardize = FALSE) {
+  X <- as.matrix(X)
+  Tn <- nrow(X); Nn <- ncol(X)
+  
+  # Center (and optionally standardize) columns
+  Xc <- scale(X, center = TRUE, scale = standardize)
+  
+  # PCA via SVD: Xc = U D V'
+  s <- svd(Xc)
+  d <- s$d
+  V <- s$v
+  
+  # Total average squared value (for V(0) case)
+  Vhat <- numeric(kmax + 1)
+  Vhat[1] <- mean(Xc^2)  # k = 0
+  
+  # For k >= 1: reconstruction error using top-k components
+  # Using identity: best rank-k approximation error Frobenius^2 = sum_{i>k} d_i^2
+  # and V(k) = (1/(NT)) * error
+  # d are singular values of Xc
+  d2 <- d^2
+  total <- sum(d2)
+  cum_topk <- cumsum(d2)
+  for (k in 1:kmax) {
+    err <- total - cum_topk[k]
+    Vhat[k + 1] <- err / (Nn * Tn)
+  }
+  
+  # Penalty terms g(N,T) from Bai & Ng (2002) for IC1/IC2/IC3
+  NT <- Nn * Tn
+  mNT <- min(Nn, Tn)
+  
+  g1 <- (Nn + Tn) / NT * log(NT / (Nn + Tn))
+  g2 <- (Nn + Tn) / NT * log(mNT)
+  g3 <- log(mNT) / mNT
+  
+  ks <- 0:kmax
+  IC1 <- log(Vhat) + ks * g1
+  IC2 <- log(Vhat) + ks * g2
+  IC3 <- log(Vhat) + ks * g3
+  
+  out <- data.frame(
+    k = ks,
+    Vhat = Vhat,
+    IC1 = IC1,
+    IC2 = IC2,
+    IC3 = IC3
+  )
+  
+  list(
+    table = out,
+    k_hat = c(
+      IC1 = out$k[which.min(out$IC1)],
+      IC2 = out$k[which.min(out$IC2)],
+      IC3 = out$k[which.min(out$IC3)]
+    )
+  )
+}
+
+## Run both versions: covariance-PCA (no standardization) and correlation-PCA (standardize)
+kmax <- 20  # you can raise to e.g. 30 or 50; k should be much smaller than min(T,N)
+res_cov <- bai_ng_ic(E_capm, kmax = kmax, standardize = FALSE)
+res_cor <- bai_ng_ic(E_capm, kmax = kmax, standardize = TRUE)
+
+cat("\n=== Bai-Ng k-hat (covariance-PCA; no column standardization) ===\n")
+print(res_cov$k_hat)
+
+cat("\n=== Bai-Ng k-hat (correlation-PCA; column standardization) ===\n")
+print(res_cor$k_hat)
+
+## Optional: plot IC curves
+op <- par(mfrow = c(2, 3), mar = c(4, 4, 2, 1))
+plot(res_cov$table$k, res_cov$table$IC1, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC1", main="IC1 (no standardize)")
+plot(res_cov$table$k, res_cov$table$IC2, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC2", main="IC2 (no standardize)")
+plot(res_cov$table$k, res_cov$table$IC3, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC3", main="IC3 (no standardize)")
+
+plot(res_cor$table$k, res_cor$table$IC1, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC1", main="IC1 (standardize)")
+plot(res_cor$table$k, res_cor$table$IC2, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC2", main="IC2 (standardize)")
+plot(res_cor$table$k, res_cor$table$IC3, type="b", pch=16, cex=0.7,
+     xlab="k", ylab="IC3", main="IC3 (standardize)")
+par(op)
+
+## Optional: show first few rows
+head(res_cov$table, 10)
+head(res_cor$table, 10)
+
+
+
+
+
+
