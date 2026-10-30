@@ -1,4 +1,12 @@
 # R-for-CP-factor-model-QMLE-method
+
+## Complete identification-diagnostic results
+
+[Browse results for all nine dimension pairs](identification_diagnostics/results/), covering **p,q in {20,40,80}**, **T=100,200,400,800**, and all three designs (108 cells; 10,796 available estimates).
+
+The `identification_diagnostics/paper/` folder contains only the **40 x 40, T=100/200/400** extract used in the article. The complete data are in `identification_diagnostics/data/`.
+
+---
 This is the R.code for simulation (int/bdry) and real data analysis via QMLE of CP factor model time series
 
 ## SIMULATION PROCEDURE

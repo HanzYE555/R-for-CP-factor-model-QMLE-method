@@ -3,6 +3,22 @@
 Complete numerical results accompanying **Identification problem and
 quasi-maximum likelihood estimation for matrix-variate CP-factor models**.
 
+## Full results — all nine dimension pairs
+
+**The complete results are not limited to 40 x 40.** Start with the [all-dimensions mean table](results/all_dimensions_means.csv) or [browse one dimension pair at a time](results/).
+
+| p / q | 20 | 40 | 80 |
+|---|---|---|---|
+| 20 | [20 x 20](results/p20_q20_means.csv) | [20 x 40](results/p20_q40_means.csv) | [20 x 80](results/p20_q80_means.csv) |
+| 40 | [40 x 20](results/p40_q20_means.csv) | [40 x 40](results/p40_q40_means.csv) | [40 x 80](results/p40_q80_means.csv) |
+| 80 | [80 x 20](results/p80_q20_means.csv) | [80 x 40](results/p80_q40_means.csv) | [80 x 80](results/p80_q80_means.csv) |
+
+Each pair includes **T=100,200,400,800** and the **interior, boundary and exterior** designs. The tables above show the ten main diagnostic means; the [complete metric summaries](data/geometry/tables/key_metrics_mean_var.csv) and [individual-J spectra](data/fit_reports/J_svd_by_seed/) contain the extended results.
+
+Only `paper/` is restricted to the article's selected 40 x 40 cases.
+
+---
+
 The paper's supplement presents means for **p=q=40** and **T=100,200,400**.
 This directory retains the complete grid: all nine ordered pairs
 p,q in {20,40,80}, T in {100,200,400,800}, and the interior, boundary

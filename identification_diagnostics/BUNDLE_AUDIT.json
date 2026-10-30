@@ -41,11 +41,19 @@
   "logical_data_and_code_files": 146,
   "max_file_bytes": 4547390,
   "uncompressed_roundtrip_hashes_checked": true,
-  "no_publishing_performed": true,
+  "no_publishing_performed": false,
   "source_checkpoint_RDS_excluded": true,
   "source_simulated_time_series_excluded": true,
   "original_mathematical_code_preserved": true,
   "provenance_absolute_paths_removed": true,
   "reproduction_test": "See REPRODUCTION_AUDIT.json: full1000-seed bootstrap and all geometry checks passed; all72 mean/variance fields match exactly; all3456 J summaries agree to6.7e-16.",
-  "ignored_validation_workspace_removed": true
+  "ignored_validation_workspace_removed": true,
+  "navigation_update": {
+    "all_dimension_cells": 108,
+    "per_dimension_tables": 9,
+    "rows_each": 12,
+    "mean_values_preserved": 1080,
+    "available_fits": 10796,
+    "date": "2026-10-30"
+  }
 }
