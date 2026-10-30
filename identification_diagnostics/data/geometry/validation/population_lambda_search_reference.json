@@ -1,0 +1,20 @@
+{
+  "domain": "lambda-axis cosine <= .90",
+  "axis_exclusion_deg": 25.841932763167126,
+  "data": "exact unit-column truth cores from R_design.R, n=.5",
+  "search_configuration": {
+    "axis_cosine_cap": 0.90000000000000002,
+    "diagnostic_random_starts": 30,
+    "diagnostic_maxeval": 400,
+    "diagnostic_cross_rounds": 2,
+    "diagnostic_cross_start_limit": 5,
+    "diagnostic_old_start_limit": 0,
+    "alignment_starts": 5,
+    "alignment_maxeval": 300,
+    "refine_maxeval": 400
+  },
+  "numerical_reference_only": true,
+  "global_optimality_proved": false,
+  "identified_cases_strict_positive": "Compact fixed lambda-axis domain, injective Z, and only coordinate rank-one directions imply strictly positive E1/rho minima.",
+  "QMLE_optimizations": 0
+}

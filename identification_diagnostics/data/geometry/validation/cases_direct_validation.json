@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "cases": 108,
+  "points": 4169,
+  "maximum_E1_error": 3.1918911957973251e-16,
+  "maximum_rho_error": 2.0413358503557077e-14,
+  "maximum_norm_error": 1.6653345369377348e-15,
+  "maximum_axis_violation": 1.0436096431476471e-13,
+  "maximum_reported_axis_cosine_error": 0,
+  "maximum_reported_physical_cosine_error": 3.2474023470285829e-15,
+  "maximum_reported_axis_angle_error": 0,
+  "maximum_angle_violation": 6.0285029412909807e-08,
+  "physical_cosine_above_old_cap_count": 3667,
+  "Q_reconstructed_from_all_independent_pairs": true,
+  "unchanged_QMLE_core_and_spectra": true,
+  "source_checkpoint_hashes_unchanged": true
+}

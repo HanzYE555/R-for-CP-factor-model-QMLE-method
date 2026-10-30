@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "cells": 108,
+  "displayed_mean_variance_pairs": 48,
+  "maximum_summary_error": 5.6843e-14,
+  "method": "R closed formula (sum(lambda^2)^2-sum(lambda^4))/2 vs Python pairwise products",
+  "paper_denominator_table_values_checked": true
+}

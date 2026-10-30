@@ -1,0 +1,10 @@
+.reproduce/
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+*.aux
+*.log
+*.out
+*.toc
+*.pdf

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "roundtrip_all_logical_payload_hashes_verified": true,
+  "recomputed_primary_cells": 108,
+  "recomputed_mean_variance_fields": 72,
+  "maximum_primary_mean_variance_difference": 0.0,
+  "individual_J_rows": 345376,
+  "J_summary_rows": 3456,
+  "maximum_J_summary_difference": 6.661338147750939e-16,
+  "full_1000_seed_bootstrap_recomputed": true,
+  "full_aggregate_geometry_validator_passed": true,
+  "QMLE_or_geometric_optimizers_run": false
+}

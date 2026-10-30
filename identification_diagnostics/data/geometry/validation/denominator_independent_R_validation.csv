@@ -1,0 +1,15 @@
+"metric","maximum_absolute_error"
+"rho_min_mean",2.08166817117217e-17
+"E1_at_rho_mean",1.38777878078145e-17
+"rho_lambda_norm_mean",1.77635683940025e-15
+"rho_k_norm_mean",3.5527136788005e-15
+"rho_H_mean",2.77555756156289e-17
+"rho_H_over_E1_mean",3.33066907387547e-16
+"rho_max_loading_cosine_mean",3.33066907387547e-16
+"rho_min_variance",2.71050543121376e-20
+"E1_at_rho_variance",2.16840434497101e-19
+"rho_lambda_norm_variance",8.88178419700125e-16
+"rho_k_norm_variance",5.6843418860808e-14
+"rho_H_variance",4.33680868994202e-19
+"rho_H_over_E1_variance",1.27901975035399e-19
+"rho_max_loading_cosine_variance",1.38777878078145e-17

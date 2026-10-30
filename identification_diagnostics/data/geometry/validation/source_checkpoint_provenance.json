@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source_fits": 10796,
+  "total_source_bytes": 420919997,
+  "source_hashes_independently_verified": true,
+  "source_files_copied_or_modified": false,
+  "new_geometry_RDS_files_in_compact_package": false
+}

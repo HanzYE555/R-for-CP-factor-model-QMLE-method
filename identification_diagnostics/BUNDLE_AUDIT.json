@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "paper_scope": {
+    "p": 40,
+    "q": 40,
+    "T": [
+      100,
+      200,
+      400
+    ]
+  },
+  "complete_grid_scope": {
+    "p": [
+      20,
+      40,
+      80
+    ],
+    "q": [
+      20,
+      40,
+      80
+    ],
+    "T": [
+      100,
+      200,
+      400,
+      800
+    ],
+    "regimes": [
+      "interior",
+      "boundary",
+      "exterior"
+    ]
+  },
+  "available_primary_fits": 10796,
+  "cells": 108,
+  "all_rho_candidates": 50577,
+  "independent_pairs": 552507,
+  "individual_J_singular_value_rows": 345376,
+  "all_J_mean_variance_rows": 3456,
+  "logical_data_and_code_files": 146,
+  "max_file_bytes": 4547390,
+  "uncompressed_roundtrip_hashes_checked": true,
+  "no_publishing_performed": true,
+  "source_checkpoint_RDS_excluded": true,
+  "source_simulated_time_series_excluded": true,
+  "original_mathematical_code_preserved": true,
+  "provenance_absolute_paths_removed": true,
+  "reproduction_test": "See REPRODUCTION_AUDIT.json: full1000-seed bootstrap and all geometry checks passed; all72 mean/variance fields match exactly; all3456 J summaries agree to6.7e-16.",
+  "ignored_validation_workspace_removed": true
+}

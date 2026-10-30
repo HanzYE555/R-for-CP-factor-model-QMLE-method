@@ -1,0 +1,2077 @@
+{
+  "format_version": 1,
+  "datasets": [
+    {
+      "logical_path": "data/geometry/all_rho_by_seed.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/all_rho_by_seed.csv",
+      "bytes": 55208239,
+      "sha256": "53705fcf77eb24115b826df1f04b9c6ae91a0172bda8833354e882e68a055fba",
+      "original_sha256": "53705fcf77eb24115b826df1f04b9c6ae91a0172bda8833354e882e68a055fba",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/geometry/all_rho_by_seed/part-001.csv.gz",
+          "rows": 6487
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-002.csv.gz",
+          "rows": 6482
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-003.csv.gz",
+          "rows": 6476
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-004.csv.gz",
+          "rows": 6465
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-005.csv.gz",
+          "rows": 6372
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-006.csv.gz",
+          "rows": 6326
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-007.csv.gz",
+          "rows": 6307
+        },
+        {
+          "path": "data/geometry/all_rho_by_seed/part-008.csv.gz",
+          "rows": 5662
+        }
+      ],
+      "rows": 50577,
+      "header_bytes": 1557
+    },
+    {
+      "logical_path": "data/geometry/all_rho_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/all_rho_mean_variance.csv",
+      "bytes": 734204,
+      "sha256": "a635d0a09dd225d0e50d9d60b5bebbe8f3ef7c73323045c949a5ffc7694764c5",
+      "original_sha256": "a635d0a09dd225d0e50d9d60b5bebbe8f3ef7c73323045c949a5ffc7694764c5",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/all_rho_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/all_rho_search_quality.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/all_rho_search_quality.csv",
+      "bytes": 277251,
+      "sha256": "ae4a5a90116ed12dfc3fc473b4998616817756090fdcd2acb669e38a2d50be6b",
+      "original_sha256": "ae4a5a90116ed12dfc3fc473b4998616817756090fdcd2acb669e38a2d50be6b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/all_rho_search_quality.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/analysis_metadata.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/analysis_metadata.json",
+      "bytes": 3698,
+      "sha256": "e4018283cfdee7119da671d7bea3bfbcee378071e4600ede30fc7e896c56f0b8",
+      "original_sha256": "e4018283cfdee7119da671d7bea3bfbcee378071e4600ede30fc7e896c56f0b8",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/analysis_metadata.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/cap10_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/cap10_mean_variance.csv",
+      "bytes": 113267,
+      "sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "original_sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/cap10_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/cell_mean_ranges.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/cell_mean_ranges.csv",
+      "bytes": 13781,
+      "sha256": "48c568669c00d402a875b46cba62dc1fb0e60d6c02b15ed9faf75181534a8c0b",
+      "original_sha256": "48c568669c00d402a875b46cba62dc1fb0e60d6c02b15ed9faf75181534a8c0b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/cell_mean_ranges.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/collection_metadata.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/collection_metadata.json",
+      "bytes": 1616,
+      "sha256": "9d31cd1c36f83e219ca8dd8b4b8ddfaa8f5bb99ac5736b6ede9fc5dd6e6a83ce",
+      "original_sha256": "9d31cd1c36f83e219ca8dd8b4b8ddfaa8f5bb99ac5736b6ede9fc5dd6e6a83ce",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/collection_metadata.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/conditional_count_coverage.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/conditional_count_coverage.csv",
+      "bytes": 352,
+      "sha256": "4be4828659b916178162d21b54bdb55a1d37c6af3ec25f91cea78906253dcbf3",
+      "original_sha256": "4be4828659b916178162d21b54bdb55a1d37c6af3ec25f91cea78906253dcbf3",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/conditional_count_coverage.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/finite_sample_auc_ranges.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/finite_sample_auc_ranges.csv",
+      "bytes": 5897,
+      "sha256": "47658e56c3edfb9f50b3688e31f465f7ad0637e06c3074deeb6476ec6996a998",
+      "original_sha256": "47658e56c3edfb9f50b3688e31f465f7ad0637e06c3074deeb6476ec6996a998",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/finite_sample_auc_ranges.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/geometry_auc.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/geometry_auc.csv",
+      "bytes": 110520,
+      "sha256": "45a477e4ff6003cd5a758bb5939d6f4e5ab3bdda8d9b93a74707ef212dea3450",
+      "original_sha256": "45a477e4ff6003cd5a758bb5939d6f4e5ab3bdda8d9b93a74707ef212dea3450",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/geometry_auc.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/geometry_summary.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/geometry_summary.csv",
+      "bytes": 724561,
+      "sha256": "d64489437d1f8897cdfd8cf6e30bc39a4193b46e9966802a8b903264c0332b0e",
+      "original_sha256": "d64489437d1f8897cdfd8cf6e30bc39a4193b46e9966802a8b903264c0332b0e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/geometry_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/key_metrics_mean_var.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/key_metrics_mean_var.csv",
+      "bytes": 402624,
+      "sha256": "b7ff08305b96a3b5032d1c089c267a31fc88cd8db42108f0d56fe211d6c105d3",
+      "original_sha256": "b7ff08305b96a3b5032d1c089c267a31fc88cd8db42108f0d56fe211d6c105d3",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/key_metrics_mean_var.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/manifest.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/manifest.csv",
+      "bytes": 322752,
+      "sha256": "85e16cef4045a5b938be99f910f0950befb2449788b20d6d88f6832ff63cd6eb",
+      "original_sha256": "85e16cef4045a5b938be99f910f0950befb2449788b20d6d88f6832ff63cd6eb",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/manifest.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/minima_pair_angles_by_seed.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/minima_pair_angles_by_seed.csv",
+      "bytes": 114164450,
+      "sha256": "ee0085f458fcd923c2bb69cdd36919be258f7074010653831cf88d8906486df8",
+      "original_sha256": "ee0085f458fcd923c2bb69cdd36919be258f7074010653831cf88d8906486df8",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-001.csv.gz",
+          "rows": 33761
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-002.csv.gz",
+          "rows": 34001
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-003.csv.gz",
+          "rows": 33788
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-004.csv.gz",
+          "rows": 33973
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-005.csv.gz",
+          "rows": 33806
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-006.csv.gz",
+          "rows": 33933
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-007.csv.gz",
+          "rows": 33850
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-008.csv.gz",
+          "rows": 33867
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-009.csv.gz",
+          "rows": 33919
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-010.csv.gz",
+          "rows": 33784
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-011.csv.gz",
+          "rows": 33979
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-012.csv.gz",
+          "rows": 33778
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-013.csv.gz",
+          "rows": 33979
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-014.csv.gz",
+          "rows": 33800
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-015.csv.gz",
+          "rows": 33943
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-016.csv.gz",
+          "rows": 33822
+        },
+        {
+          "path": "data/geometry/minima_pair_angles_by_seed/part-017.csv.gz",
+          "rows": 10524
+        }
+      ],
+      "rows": 552507,
+      "header_bytes": 211
+    },
+    {
+      "logical_path": "data/geometry/new_vs_matrix_domain_auc.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/new_vs_matrix_domain_auc.csv",
+      "bytes": 76209,
+      "sha256": "d53301df4bfff9c378ac05a44a91cee48af40972091dc84e2c05d3df068cbd4f",
+      "original_sha256": "d53301df4bfff9c378ac05a44a91cee48af40972091dc84e2c05d3df068cbd4f",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/new_vs_matrix_domain_auc.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/new_vs_matrix_domain_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/new_vs_matrix_domain_mean_variance.csv",
+      "bytes": 199982,
+      "sha256": "6e8d6697508869791841cfb4736f27ce554ff693715383b6033d5738a8a2d011",
+      "original_sha256": "6e8d6697508869791841cfb4736f27ce554ff693715383b6033d5738a8a2d011",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/new_vs_matrix_domain_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/paired_correlations_and_gains.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/paired_correlations_and_gains.csv",
+      "bytes": 14935,
+      "sha256": "164d4124422f6d9c562ecd7bc97dba5aac8c242ff320a4f1ea8f1786cfa999c6",
+      "original_sha256": "164d4124422f6d9c562ecd7bc97dba5aac8c242ff320a4f1ea8f1786cfa999c6",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/paired_correlations_and_gains.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/physical_direction_checks.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/physical_direction_checks.csv",
+      "bytes": 64582,
+      "sha256": "e655d7f08dd05baa1a6ad4fdb1bb7e32d00bd819e66949b4e259afa2c2eb34f0",
+      "original_sha256": "e655d7f08dd05baa1a6ad4fdb1bb7e32d00bd819e66949b4e259afa2c2eb34f0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/physical_direction_checks.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/physical_proximity_by_regime_T.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/physical_proximity_by_regime_T.csv",
+      "bytes": 6506,
+      "sha256": "eec51f6e81dde19b3d7f9e4bd2c69054e3e440e405c6f9c0f553b3709bc5490a",
+      "original_sha256": "eec51f6e81dde19b3d7f9e4bd2c69054e3e440e405c6f9c0f553b3709bc5490a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/physical_proximity_by_regime_T.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/primary_by_seed.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/primary_by_seed.csv",
+      "bytes": 7569724,
+      "sha256": "3425150244c23372213c975aeb47771ae9e3173367aeb3b8cd636b2a2ee5c209",
+      "original_sha256": "3425150244c23372213c975aeb47771ae9e3173367aeb3b8cd636b2a2ee5c209",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/geometry/primary_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/primary_by_seed_enriched.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/primary_by_seed_enriched.csv",
+      "bytes": 13647883,
+      "sha256": "c16d7411d31dda02195c0dd1838d54da755ca8092156eadbfbc8a100c31063c7",
+      "original_sha256": "c16d7411d31dda02195c0dd1838d54da755ca8092156eadbfbc8a100c31063c7",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/geometry/primary_by_seed_enriched.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/scientific_findings.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/scientific_findings.json",
+      "bytes": 117852,
+      "sha256": "d4d99e7825187b9f7dd7f7be4f61bc1a29dc6f1f6837f046a5537f86aff4bfc0",
+      "original_sha256": "d4d99e7825187b9f7dd7f7be4f61bc1a29dc6f1f6837f046a5537f86aff4bfc0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/scientific_findings.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/scientific_findings.txt",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/scientific_findings.txt",
+      "bytes": 7525,
+      "sha256": "a65445e5d7197a6170ac84e4389baff3d15e307a789e01e5c3416300354d92ab",
+      "original_sha256": "a65445e5d7197a6170ac84e4389baff3d15e307a789e01e5c3416300354d92ab",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/scientific_findings.txt"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/search_quality.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/search_quality.csv",
+      "bytes": 82566,
+      "sha256": "10574077056b5c327cf92a5bca31df065fcaa84a48be9a3a4dfdee368ecee077",
+      "original_sha256": "10574077056b5c327cf92a5bca31df065fcaa84a48be9a3a4dfdee368ecee077",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/search_quality.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/separation_auc.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/separation_auc.csv",
+      "bytes": 25704,
+      "sha256": "b8ec8805cc9030720f062a4f7668b1c12b0856f075d11fbd3bc3ce03af441027",
+      "original_sha256": "b8ec8805cc9030720f062a4f7668b1c12b0856f075d11fbd3bc3ce03af441027",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/separation_auc.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/separation_auc_comparison_wide.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/separation_auc_comparison_wide.csv",
+      "bytes": 18784,
+      "sha256": "2b2dda794ae405d6a1a1df9494ea0461568caadc50befb00e3ac65829d9a10d0",
+      "original_sha256": "2b2dda794ae405d6a1a1df9494ea0461568caadc50befb00e3ac65829d9a10d0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/separation_auc_comparison_wide.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/separation_auc_increments.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/separation_auc_increments.csv",
+      "bytes": 20692,
+      "sha256": "6c74fe73ddf4d1c20a46837435c9363135c5a157f762e19f37a622945c9104bd",
+      "original_sha256": "6c74fe73ddf4d1c20a46837435c9363135c5a157f762e19f37a622945c9104bd",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/separation_auc_increments.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/all_rho_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/all_rho_mean_variance.csv",
+      "bytes": 734204,
+      "sha256": "a635d0a09dd225d0e50d9d60b5bebbe8f3ef7c73323045c949a5ffc7694764c5",
+      "original_sha256": "a635d0a09dd225d0e50d9d60b5bebbe8f3ef7c73323045c949a5ffc7694764c5",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/all_rho_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/all_rho_search_quality.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/all_rho_search_quality.csv",
+      "bytes": 277251,
+      "sha256": "ae4a5a90116ed12dfc3fc473b4998616817756090fdcd2acb669e38a2d50be6b",
+      "original_sha256": "ae4a5a90116ed12dfc3fc473b4998616817756090fdcd2acb669e38a2d50be6b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/all_rho_search_quality.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/best_rho_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/best_rho_mean_variance.csv",
+      "bytes": 113267,
+      "sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "original_sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/best_rho_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/cap10_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/cap10_mean_variance.csv",
+      "bytes": 113267,
+      "sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "original_sha256": "b73d97922e52df75b11f96640c4bad65bed8f850d32b244fa8415e1133c35ab0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/cap10_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/geometry_auc.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/geometry_auc.csv",
+      "bytes": 110520,
+      "sha256": "45a477e4ff6003cd5a758bb5939d6f4e5ab3bdda8d9b93a74707ef212dea3450",
+      "original_sha256": "45a477e4ff6003cd5a758bb5939d6f4e5ab3bdda8d9b93a74707ef212dea3450",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/geometry_auc.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/geometry_summary.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/geometry_summary.csv",
+      "bytes": 724561,
+      "sha256": "d64489437d1f8897cdfd8cf6e30bc39a4193b46e9966802a8b903264c0332b0e",
+      "original_sha256": "d64489437d1f8897cdfd8cf6e30bc39a4193b46e9966802a8b903264c0332b0e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/geometry_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/key_metrics_mean_var.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/key_metrics_mean_var.csv",
+      "bytes": 402624,
+      "sha256": "b7ff08305b96a3b5032d1c089c267a31fc88cd8db42108f0d56fe211d6c105d3",
+      "original_sha256": "b7ff08305b96a3b5032d1c089c267a31fc88cd8db42108f0d56fe211d6c105d3",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/key_metrics_mean_var.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/paired_correlations_and_gains.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/paired_correlations_and_gains.csv",
+      "bytes": 14935,
+      "sha256": "164d4124422f6d9c562ecd7bc97dba5aac8c242ff320a4f1ea8f1786cfa999c6",
+      "original_sha256": "164d4124422f6d9c562ecd7bc97dba5aac8c242ff320a4f1ea8f1786cfa999c6",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/paired_correlations_and_gains.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/physical_direction_checks.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/physical_direction_checks.csv",
+      "bytes": 64582,
+      "sha256": "e655d7f08dd05baa1a6ad4fdb1bb7e32d00bd819e66949b4e259afa2c2eb34f0",
+      "original_sha256": "e655d7f08dd05baa1a6ad4fdb1bb7e32d00bd819e66949b4e259afa2c2eb34f0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/physical_direction_checks.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/rho_denominator_40x40_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/rho_denominator_40x40_mean_variance.csv",
+      "bytes": 4053,
+      "sha256": "00a47ad622c149873d76a3b09b2d189b73adb12ba8b6818407f475fd3568e1a7",
+      "original_sha256": "00a47ad622c149873d76a3b09b2d189b73adb12ba8b6818407f475fd3568e1a7",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/rho_denominator_40x40_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/rho_denominator_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/rho_denominator_mean_variance.csv",
+      "bytes": 34107,
+      "sha256": "03fae458b9b90340c25fdf200699f79c3a3ae9ac511ac45b3f43cad0d37b31e7",
+      "original_sha256": "03fae458b9b90340c25fdf200699f79c3a3ae9ac511ac45b3f43cad0d37b31e7",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/rho_denominator_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/search_quality.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/search_quality.csv",
+      "bytes": 82566,
+      "sha256": "10574077056b5c327cf92a5bca31df065fcaa84a48be9a3a4dfdee368ecee077",
+      "original_sha256": "10574077056b5c327cf92a5bca31df065fcaa84a48be9a3a4dfdee368ecee077",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/search_quality.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/separation_auc.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/separation_auc.csv",
+      "bytes": 25704,
+      "sha256": "b8ec8805cc9030720f062a4f7668b1c12b0856f075d11fbd3bc3ce03af441027",
+      "original_sha256": "b8ec8805cc9030720f062a4f7668b1c12b0856f075d11fbd3bc3ce03af441027",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/separation_auc.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/separation_auc_comparison_wide.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/separation_auc_comparison_wide.csv",
+      "bytes": 18784,
+      "sha256": "2b2dda794ae405d6a1a1df9494ea0461568caadc50befb00e3ac65829d9a10d0",
+      "original_sha256": "2b2dda794ae405d6a1a1df9494ea0461568caadc50befb00e3ac65829d9a10d0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/separation_auc_comparison_wide.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/tables/separation_auc_increments.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/tables/separation_auc_increments.csv",
+      "bytes": 20692,
+      "sha256": "6c74fe73ddf4d1c20a46837435c9363135c5a157f762e19f37a622945c9104bd",
+      "original_sha256": "6c74fe73ddf4d1c20a46837435c9363135c5a157f762e19f37a622945c9104bd",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/tables/separation_auc_increments.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/cases_direct_validation.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/cases_direct_validation.csv",
+      "bytes": 629724,
+      "sha256": "1a2047e8d50f0697444f3a5d6748432b7d0afddf8f18d213b59df3154653f9ab",
+      "original_sha256": "1a2047e8d50f0697444f3a5d6748432b7d0afddf8f18d213b59df3154653f9ab",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/cases_direct_validation.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/cases_direct_validation.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/cases_direct_validation.json",
+      "bytes": 665,
+      "sha256": "a0c0e1fe9650e44f16eaa2a3a7bd5f4baf692010e63013de102cefee8fa72297",
+      "original_sha256": "a0c0e1fe9650e44f16eaa2a3a7bd5f4baf692010e63013de102cefee8fa72297",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/cases_direct_validation.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/denominator_independent_R_validation.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/denominator_independent_R_validation.csv",
+      "bytes": 643,
+      "sha256": "c0fc0015a4fdf3135ff84ab6285844ea7151c16daf5693d3f3d7857a84d547f3",
+      "original_sha256": "c0fc0015a4fdf3135ff84ab6285844ea7151c16daf5693d3f3d7857a84d547f3",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/denominator_independent_R_validation.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/denominator_independent_R_validation.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/denominator_independent_R_validation.json",
+      "bytes": 271,
+      "sha256": "fe8f3cfbaa972d8c7e593c3a8b4d089b1d029efdd15ae35af7d40b82dcee1ff0",
+      "original_sha256": "fe8f3cfbaa972d8c7e593c3a8b4d089b1d029efdd15ae35af7d40b82dcee1ff0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/denominator_independent_R_validation.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/exterior_population_all_bases.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/exterior_population_all_bases.csv",
+      "bytes": 871,
+      "sha256": "8440980ece9a919e7604eba09da1c5e8e92029699c848f978f938c9d9de84735",
+      "original_sha256": "8440980ece9a919e7604eba09da1c5e8e92029699c848f978f938c9d9de84735",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/exterior_population_all_bases.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/full_export_coverage.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/full_export_coverage.csv",
+      "bytes": 3273,
+      "sha256": "b7062bff45e5c7d1b7c276077a58ccbc9f3b5e14e9c68bd2f216b99550068978",
+      "original_sha256": "b7062bff45e5c7d1b7c276077a58ccbc9f3b5e14e9c68bd2f216b99550068978",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/full_export_coverage.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/full_exports_validation.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/full_exports_validation.json",
+      "bytes": 877,
+      "sha256": "e8f7ec98b2970d4cfd0a4c663ecbc28eac962c3089ccee47c054ee3fb37c467e",
+      "original_sha256": "e8f7ec98b2970d4cfd0a4c663ecbc28eac962c3089ccee47c054ee3fb37c467e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/full_exports_validation.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/population_lambda_search_reference.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/population_lambda_search_reference.csv",
+      "bytes": 2024,
+      "sha256": "b1f7269aa2c863c01e48a9e7af5d3e2bb4e9955ccd26368f5942710ec84ffd1f",
+      "original_sha256": "b1f7269aa2c863c01e48a9e7af5d3e2bb4e9955ccd26368f5942710ec84ffd1f",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/population_lambda_search_reference.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/population_lambda_search_reference.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/population_lambda_search_reference.json",
+      "bytes": 777,
+      "sha256": "4cd36180e96d74319ce048bf04cf6cc42714c16fb1e521357e39fa6e17d7b40b",
+      "original_sha256": "4cd36180e96d74319ce048bf04cf6cc42714c16fb1e521357e39fa6e17d7b40b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/population_lambda_search_reference.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/rho_denominator_40x40_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/rho_denominator_40x40_mean_variance.csv",
+      "bytes": 4053,
+      "sha256": "00a47ad622c149873d76a3b09b2d189b73adb12ba8b6818407f475fd3568e1a7",
+      "original_sha256": "00a47ad622c149873d76a3b09b2d189b73adb12ba8b6818407f475fd3568e1a7",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/rho_denominator_40x40_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/rho_denominator_audit.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/rho_denominator_audit.json",
+      "bytes": 447,
+      "sha256": "cc6efd97ea8b75eeb729be78638ee819557b50b9425896123139e62e4e7d5f82",
+      "original_sha256": "cc6efd97ea8b75eeb729be78638ee819557b50b9425896123139e62e4e7d5f82",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/rho_denominator_audit.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/rho_denominator_by_seed.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/rho_denominator_by_seed.csv",
+      "bytes": 1676491,
+      "sha256": "1122cfbe116c9a5a775fabb669f79fc829381335edc1c216f117605ce4b2380e",
+      "original_sha256": "1122cfbe116c9a5a775fabb669f79fc829381335edc1c216f117605ce4b2380e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/rho_denominator_by_seed.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/rho_denominator_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/rho_denominator_mean_variance.csv",
+      "bytes": 34107,
+      "sha256": "03fae458b9b90340c25fdf200699f79c3a3ae9ac511ac45b3f43cad0d37b31e7",
+      "original_sha256": "03fae458b9b90340c25fdf200699f79c3a3ae9ac511ac45b3f43cad0d37b31e7",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/rho_denominator_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/source_checkpoint_provenance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/source_checkpoint_provenance.csv",
+      "bytes": 2849402,
+      "sha256": "e0941b82b9bf80d6e40dd39deb9aeb52ce560b1384d772d139ed2befa07d4026",
+      "original_sha256": "86af35151e2279fdf695bb9315c1e490cb4547ba928350ce2e8af678c1c08942",
+      "transformation": "portable source paths",
+      "storage": "gzip",
+      "files": [
+        "data/geometry/validation/source_checkpoint_provenance.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/source_checkpoint_provenance.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/source_checkpoint_provenance.json",
+      "bytes": 238,
+      "sha256": "c152ab5604c660f365ef0fd91303486e5a15fcbf8e9a9b8b443c4bcba2ff5fb5",
+      "original_sha256": "c152ab5604c660f365ef0fd91303486e5a15fcbf8e9a9b8b443c4bcba2ff5fb5",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/source_checkpoint_provenance.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/validation/stratified_direct_manifest.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/validation/stratified_direct_manifest.csv",
+      "bytes": 11160,
+      "sha256": "531e69be8b2551519f6e9139a670c708a6b08a676ddb31c5d2a3929bd752c2b1",
+      "original_sha256": "531e69be8b2551519f6e9139a670c708a6b08a676ddb31c5d2a3929bd752c2b1",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/validation/stratified_direct_manifest.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/continued_lambda_primary.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/continued_lambda_primary.csv",
+      "bytes": 25032,
+      "sha256": "fbe2e4e37dd5224926f19ce202404af0a8fc5e6598c8ddfe793b256617169327",
+      "original_sha256": "fbe2e4e37dd5224926f19ce202404af0a8fc5e6598c8ddfe793b256617169327",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/continued_lambda_primary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_auc_replacement_sensitivity.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_auc_replacement_sensitivity.csv",
+      "bytes": 175252,
+      "sha256": "4cdb6be549b83ca84591b84a8dc0e1aaf3f0cbdc841458c69d70f3e97cd9f41d",
+      "original_sha256": "4cdb6be549b83ca84591b84a8dc0e1aaf3f0cbdc841458c69d70f3e97cd9f41d",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_auc_replacement_sensitivity.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_iteration_direct_case_validation.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_iteration_direct_case_validation.csv",
+      "bytes": 1897,
+      "sha256": "2653c6826f3be7c8b97168748cdf440c2713d70636a45753e4a8d66d823a712a",
+      "original_sha256": "2653c6826f3be7c8b97168748cdf440c2713d70636a45753e4a8d66d823a712a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_iteration_direct_case_validation.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_iteration_direct_point_validation.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_iteration_direct_point_validation.csv",
+      "bytes": 128444,
+      "sha256": "883d65a80ff6ec6697f7d99904d6f0fd2f409411d31dcd36781bc4dd6cab0add",
+      "original_sha256": "883d65a80ff6ec6697f7d99904d6f0fd2f409411d31dcd36781bc4dd6cab0add",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_iteration_direct_point_validation.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_iteration_direct_validation.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_iteration_direct_validation.json",
+      "bytes": 528,
+      "sha256": "6a435be2a0495477af74ca302272854dee7aa3fb6f24532d590068474b5ded0c",
+      "original_sha256": "6a435be2a0495477af74ca302272854dee7aa3fb6f24532d590068474b5ded0c",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_iteration_direct_validation.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_iteration_findings.json",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_iteration_findings.json",
+      "bytes": 21464,
+      "sha256": "a19cd733a80b68a217412604536a11f74bc36f8ab079975e1baa88021bf9939a",
+      "original_sha256": "a19cd733a80b68a217412604536a11f74bc36f8ab079975e1baa88021bf9939a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_iteration_findings.json"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/lambda_iteration_flag_changes.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/lambda_iteration_flag_changes.csv",
+      "bytes": 1718,
+      "sha256": "fde91470b1cb171736647a28f1e5e91d0a0d9e01bc123206eb51d10ede464780",
+      "original_sha256": "fde91470b1cb171736647a28f1e5e91d0a0d9e01bc123206eb51d10ede464780",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/lambda_iteration_flag_changes.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/original_lambda_primary.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/original_lambda_primary.csv",
+      "bytes": 24973,
+      "sha256": "406f3816459faff25a43ed2e1c4a30afeedbb38a557a2002063c2f7530984723",
+      "original_sha256": "406f3816459faff25a43ed2e1c4a30afeedbb38a557a2002063c2f7530984723",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/original_lambda_primary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/paired_lambda_iteration_by_seed.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/paired_lambda_iteration_by_seed.csv",
+      "bytes": 36715,
+      "sha256": "602043d80fd98721ca5167109a0ef4c5190788ff57fb622382da326390a2be72",
+      "original_sha256": "602043d80fd98721ca5167109a0ef4c5190788ff57fb622382da326390a2be72",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/paired_lambda_iteration_by_seed.csv"
+      ]
+    },
+    {
+      "logical_path": "data/geometry/iteration_sensitivity/paired_lambda_iteration_mean_variance.csv",
+      "stage_path": "outputs/lambda_axis_geometry_20261030/iteration_sensitivity/paired_lambda_iteration_mean_variance.csv",
+      "bytes": 30531,
+      "sha256": "7b170e3304851dc878d57bcbf7604ad0b378923338dd49b85eb6fc9f7d4db9f4",
+      "original_sha256": "7b170e3304851dc878d57bcbf7604ad0b378923338dd49b85eb6fc9f7d4db9f4",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/geometry/iteration_sensitivity/paired_lambda_iteration_mean_variance.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/all_J_singular_values_mean_variance.csv",
+      "stage_path": "work/grid_final_spectra/all_J_singular_values_mean_variance.csv",
+      "bytes": 2812951,
+      "sha256": "a91a31c931735b832c71d91ea4b080497d757c32bda3a1569fd05cd3af4848f9",
+      "original_sha256": "a91a31c931735b832c71d91ea4b080497d757c32bda3a1569fd05cd3af4848f9",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/spectra/all_J_singular_values_mean_variance.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/Ar_Br_Z_C_all_spectra_summary.csv",
+      "stage_path": "work/grid_final_spectra/Ar_Br_Z_C_all_spectra_summary.csv",
+      "bytes": 744172,
+      "sha256": "835c18c58dd58ed7c3b194f546bcb319cfb8978a5edcd888e68a15bfd39458b8",
+      "original_sha256": "835c18c58dd58ed7c3b194f546bcb319cfb8978a5edcd888e68a15bfd39458b8",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/Ar_Br_Z_C_all_spectra_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/direction_recovery_by_pq_T.csv",
+      "stage_path": "work/grid_final_spectra/direction_recovery_by_pq_T.csv",
+      "bytes": 38872,
+      "sha256": "3a22fd03e056d9e73defdfc1e340bdf59d164ced66d5f5c226ff9f3493697b22",
+      "original_sha256": "3a22fd03e056d9e73defdfc1e340bdf59d164ced66d5f5c226ff9f3493697b22",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/direction_recovery_by_pq_T.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/exterior_basis_counts.csv",
+      "stage_path": "work/grid_final_spectra/exterior_basis_counts.csv",
+      "bytes": 3256,
+      "sha256": "6ce2f88c4d1bc4d8ea13146f7e41c3bd554048fab03226f53280f35608754e31",
+      "original_sha256": "6ce2f88c4d1bc4d8ea13146f7e41c3bd554048fab03226f53280f35608754e31",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/exterior_basis_counts.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/exterior_J_by_actual_basis_summary.csv",
+      "stage_path": "work/grid_final_spectra/exterior_J_by_actual_basis_summary.csv",
+      "bytes": 8602,
+      "sha256": "a712edc7957f6385fcfb5708b821e2356c7a0c1be280ce4939c8a826ba27b9b9",
+      "original_sha256": "a712edc7957f6385fcfb5708b821e2356c7a0c1be280ce4939c8a826ba27b9b9",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/exterior_J_by_actual_basis_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/exterior_J_reference_by_seed.csv",
+      "stage_path": "work/grid_final_spectra/exterior_J_reference_by_seed.csv",
+      "bytes": 778944,
+      "sha256": "3f0f1012fa30ba9fbf21ba7f744d4cd09f829615a5e9bac7ef03f4859b07734b",
+      "original_sha256": "3f0f1012fa30ba9fbf21ba7f744d4cd09f829615a5e9bac7ef03f4859b07734b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/exterior_J_reference_by_seed.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/exterior_J_reference_summary.csv",
+      "stage_path": "work/grid_final_spectra/exterior_J_reference_summary.csv",
+      "bytes": 26397,
+      "sha256": "e2714456d92a95a42d57d8d4b3a9afc22748f2469ba4b49dd0bef37aab9e54ee",
+      "original_sha256": "e2714456d92a95a42d57d8d4b3a9afc22748f2469ba4b49dd0bef37aab9e54ee",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/exterior_J_reference_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/extra_true_direction_projection_pooled.csv",
+      "stage_path": "work/grid_final_spectra/extra_true_direction_projection_pooled.csv",
+      "bytes": 2117,
+      "sha256": "a4b84c37b679db54d70b352590dc71ed76301899cb6e60a61b9a03b0fa1c160b",
+      "original_sha256": "a4b84c37b679db54d70b352590dc71ed76301899cb6e60a61b9a03b0fa1c160b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/extra_true_direction_projection_pooled.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/extra_true_direction_projection_summary.csv",
+      "stage_path": "work/grid_final_spectra/extra_true_direction_projection_summary.csv",
+      "bytes": 14795,
+      "sha256": "6c9c9a763769bf7164b4059058f90efb2d8bbe9e3ed59053e3e25eae190e5725",
+      "original_sha256": "6c9c9a763769bf7164b4059058f90efb2d8bbe9e3ed59053e3e25eae190e5725",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/extra_true_direction_projection_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/J_errors_against_actual_basis_reference.csv",
+      "stage_path": "work/grid_final_spectra/J_errors_against_actual_basis_reference.csv",
+      "bytes": 60009,
+      "sha256": "22cc17f2d5736054423ab82e1ad3c58b5a495db9480785192ea0ba998a8a58b8",
+      "original_sha256": "22cc17f2d5736054423ab82e1ad3c58b5a495db9480785192ea0ba998a8a58b8",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/J_errors_against_actual_basis_reference.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/J_spectrum_by_actual_basis.csv",
+      "stage_path": "work/grid_final_spectra/J_spectrum_by_actual_basis.csv",
+      "bytes": 302341,
+      "sha256": "88e2058a59d3b95b00688458667ca902f4f122865726d69c6360f98230a10767",
+      "original_sha256": "88e2058a59d3b95b00688458667ca902f4f122865726d69c6360f98230a10767",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/J_spectrum_by_actual_basis.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/Jell_minimum_singular_values.csv",
+      "stage_path": "work/grid_final_spectra/Jell_minimum_singular_values.csv",
+      "bytes": 345713,
+      "sha256": "84842dfc9ce010d0f0e259e6783ddce4b2a32c52c0d398df599f9d03094445c5",
+      "original_sha256": "84842dfc9ce010d0f0e259e6783ddce4b2a32c52c0d398df599f9d03094445c5",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/Jell_minimum_singular_values.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/matrix_rank_and_tail_by_seed.csv",
+      "stage_path": "work/grid_final_spectra/matrix_rank_and_tail_by_seed.csv",
+      "bytes": 5096459,
+      "sha256": "2ecf60be02086a5d1bca74c11e36d1be3befc4feecf659cffc96d733365e2466",
+      "original_sha256": "2ecf60be02086a5d1bca74c11e36d1be3befc4feecf659cffc96d733365e2466",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/spectra/matrix_rank_and_tail_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/matrix_rank_and_tail_pooled.csv",
+      "stage_path": "work/grid_final_spectra/matrix_rank_and_tail_pooled.csv",
+      "bytes": 17496,
+      "sha256": "26820be0ac38ba3db7a1c7c19e6427f2c9c59f910ab7ee00bbab7b31d4d90d12",
+      "original_sha256": "26820be0ac38ba3db7a1c7c19e6427f2c9c59f910ab7ee00bbab7b31d4d90d12",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/matrix_rank_and_tail_pooled.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/matrix_rank_and_tail_summary.csv",
+      "stage_path": "work/grid_final_spectra/matrix_rank_and_tail_summary.csv",
+      "bytes": 189446,
+      "sha256": "a373436dd404ea6d82c3b0bdd3c5e72587aa62df552dcd838b41084d6b3df199",
+      "original_sha256": "a373436dd404ea6d82c3b0bdd3c5e72587aa62df552dcd838b41084d6b3df199",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/matrix_rank_and_tail_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/metric_spectra_summary_by_pq_T.csv",
+      "stage_path": "work/grid_final_spectra/metric_spectra_summary_by_pq_T.csv",
+      "bytes": 92167,
+      "sha256": "d0d948db77971b0718ab8ee4d4ce20255e4e3b8ef9502261bb5e9d58f83fb250",
+      "original_sha256": "d0d948db77971b0718ab8ee4d4ce20255e4e3b8ef9502261bb5e9d58f83fb250",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/metric_spectra_summary_by_pq_T.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/metric_spectra_summary_pooled.csv",
+      "stage_path": "work/grid_final_spectra/metric_spectra_summary_pooled.csv",
+      "bytes": 11777,
+      "sha256": "6be54bf31360d1bc520499808c9c9c57fb12687b42a850eec49763ad329f35e1",
+      "original_sha256": "6be54bf31360d1bc520499808c9c9c57fb12687b42a850eec49763ad329f35e1",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/metric_spectra_summary_pooled.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/Mx_and_signal_extremes_pooled.csv",
+      "stage_path": "work/grid_final_spectra/Mx_and_signal_extremes_pooled.csv",
+      "bytes": 4277,
+      "sha256": "9c2dea4d63fdf0e133b90129f8ba83fdb96c67b8b0dc8cd5d89d2c5030e315aa",
+      "original_sha256": "9c2dea4d63fdf0e133b90129f8ba83fdb96c67b8b0dc8cd5d89d2c5030e315aa",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/Mx_and_signal_extremes_pooled.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/Mx_and_signal_extremes_summary.csv",
+      "stage_path": "work/grid_final_spectra/Mx_and_signal_extremes_summary.csv",
+      "bytes": 36251,
+      "sha256": "b06b409434901d991ab771b3f5b0e474e5e39d2d5aa406dad9789f00846ac104",
+      "original_sha256": "b06b409434901d991ab771b3f5b0e474e5e39d2d5aa406dad9789f00846ac104",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/Mx_and_signal_extremes_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/Mx_eigenvalues_and_signal_svd_summary.csv",
+      "stage_path": "work/grid_final_spectra/Mx_eigenvalues_and_signal_svd_summary.csv",
+      "bytes": 165104,
+      "sha256": "47bbf3ae460c0554ed50d2813f7c34c4f8b45ce082320f0ec84e6c8ec34615c8",
+      "original_sha256": "47bbf3ae460c0554ed50d2813f7c34c4f8b45ce082320f0ec84e6c8ec34615c8",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/Mx_eigenvalues_and_signal_svd_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/old_vs_new_40x40_spectra_summary.csv",
+      "stage_path": "work/grid_final_spectra/old_vs_new_40x40_spectra_summary.csv",
+      "bytes": 5355,
+      "sha256": "0b9bb434152324e8da81071c211d56ca91c7980bcce44b3fdd7dcfd59f4b5c8b",
+      "original_sha256": "0b9bb434152324e8da81071c211d56ca91c7980bcce44b3fdd7dcfd59f4b5c8b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/old_vs_new_40x40_spectra_summary.csv"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/README_spectra_findings.txt",
+      "stage_path": "work/grid_final_spectra/README_spectra_findings.txt",
+      "bytes": 5615,
+      "sha256": "9b583a4de94ca948bf7b626126499798f3aee34b5268b897ff5799890bb77985",
+      "original_sha256": "9b583a4de94ca948bf7b626126499798f3aee34b5268b897ff5799890bb77985",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/README_spectra_findings.txt"
+      ]
+    },
+    {
+      "logical_path": "data/spectra/summary.json",
+      "stage_path": "work/grid_final_spectra/summary.json",
+      "bytes": 6430,
+      "sha256": "5b816627c306a451857a6cff3c4251823262acc3e3cd6cc216ab75e9144a978f",
+      "original_sha256": "5b816627c306a451857a6cff3c4251823262acc3e3cd6cc216ab75e9144a978f",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/spectra/summary.json"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/J_svd_by_seed.csv",
+      "stage_path": "inputs/fit_reports/J_svd_by_seed.csv",
+      "bytes": 67038319,
+      "sha256": "67220e75d9d2dcaec854acf370341e77429cd33312d129000f5a81477aaf264b",
+      "original_sha256": "67220e75d9d2dcaec854acf370341e77429cd33312d129000f5a81477aaf264b",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-001.csv.gz",
+          "rows": 36054
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-002.csv.gz",
+          "rows": 36010
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-003.csv.gz",
+          "rows": 35986
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-004.csv.gz",
+          "rows": 35989
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-005.csv.gz",
+          "rows": 35961
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-006.csv.gz",
+          "rows": 35954
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-007.csv.gz",
+          "rows": 36009
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-008.csv.gz",
+          "rows": 36105
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-009.csv.gz",
+          "rows": 36099
+        },
+        {
+          "path": "data/fit_reports/J_svd_by_seed/part-010.csv.gz",
+          "rows": 21209
+        }
+      ],
+      "rows": 345376,
+      "header_bytes": 316
+    },
+    {
+      "logical_path": "data/fit_reports/all_matrix_spectra_by_seed.csv",
+      "stage_path": "inputs/fit_reports/all_matrix_spectra_by_seed.csv",
+      "bytes": 124367407,
+      "sha256": "ee3677096028b75746bae19025e21c4ca968da32cfb35f155fcded325b215cce",
+      "original_sha256": "ee3677096028b75746bae19025e21c4ca968da32cfb35f155fcded325b215cce",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-001.csv.gz",
+          "rows": 38681
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-002.csv.gz",
+          "rows": 41624
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-003.csv.gz",
+          "rows": 38612
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-004.csv.gz",
+          "rows": 41589
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-005.csv.gz",
+          "rows": 38578
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-006.csv.gz",
+          "rows": 41547
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-007.csv.gz",
+          "rows": 38615
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-008.csv.gz",
+          "rows": 41569
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-009.csv.gz",
+          "rows": 38587
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-010.csv.gz",
+          "rows": 41544
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-011.csv.gz",
+          "rows": 38598
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-012.csv.gz",
+          "rows": 41499
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-013.csv.gz",
+          "rows": 38697
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-014.csv.gz",
+          "rows": 41435
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-015.csv.gz",
+          "rows": 38763
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-016.csv.gz",
+          "rows": 41332
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-017.csv.gz",
+          "rows": 38888
+        },
+        {
+          "path": "data/fit_reports/all_matrix_spectra_by_seed/part-018.csv.gz",
+          "rows": 32210
+        }
+      ],
+      "rows": 712368,
+      "header_bytes": 356
+    },
+    {
+      "logical_path": "data/fit_reports/fit_covariance_spectra_by_seed.csv",
+      "stage_path": "inputs/fit_reports/fit_covariance_spectra_by_seed.csv",
+      "bytes": 5752092,
+      "sha256": "5c4ec6a11dbdcd7c728040b69efe532782e99fa1290bc0b058fc790fdaf667e1",
+      "original_sha256": "5c4ec6a11dbdcd7c728040b69efe532782e99fa1290bc0b058fc790fdaf667e1",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/fit_reports/fit_covariance_spectra_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/metrics_by_seed.csv",
+      "stage_path": "inputs/fit_reports/metrics_by_seed.csv",
+      "bytes": 5821469,
+      "sha256": "7e18b4b69b1ce72cb67426207ec47716f8ecff6a3c5c99829d5ae59c7ac0e35a",
+      "original_sha256": "7e18b4b69b1ce72cb67426207ec47716f8ecff6a3c5c99829d5ae59c7ac0e35a",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/fit_reports/metrics_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/qmle_all_starts.csv",
+      "stage_path": "inputs/fit_reports/qmle_all_starts.csv",
+      "bytes": 23843945,
+      "sha256": "4697f7a1eb9b0d31067d4919b7be8d527dca285f44369fc8809f9e2a6a6d2daf",
+      "original_sha256": "4697f7a1eb9b0d31067d4919b7be8d527dca285f44369fc8809f9e2a6a6d2daf",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/qmle_all_starts/part-001.csv.gz",
+          "rows": 21150
+        },
+        {
+          "path": "data/fit_reports/qmle_all_starts/part-002.csv.gz",
+          "rows": 21384
+        },
+        {
+          "path": "data/fit_reports/qmle_all_starts/part-003.csv.gz",
+          "rows": 21567
+        },
+        {
+          "path": "data/fit_reports/qmle_all_starts/part-004.csv.gz",
+          "rows": 8775
+        }
+      ],
+      "rows": 72876,
+      "header_bytes": 567
+    },
+    {
+      "logical_path": "data/fit_reports/nonconvergence_and_errors.csv",
+      "stage_path": "inputs/fit_reports/nonconvergence_and_errors.csv",
+      "bytes": 4650912,
+      "sha256": "741a518bef7aba481f6403c887e843a28709dd7a862b0e33b0e592a09d3e49f9",
+      "original_sha256": "741a518bef7aba481f6403c887e843a28709dd7a862b0e33b0e592a09d3e49f9",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/fit_reports/nonconvergence_and_errors.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/direction_matching_by_seed.csv",
+      "stage_path": "inputs/fit_reports/direction_matching_by_seed.csv",
+      "bytes": 10567394,
+      "sha256": "cca0d57fd44534591e5516c4965f55f60f09668a043fbda0fbf67386a01e946b",
+      "original_sha256": "cca0d57fd44534591e5516c4965f55f60f09668a043fbda0fbf67386a01e946b",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/fit_reports/direction_matching_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/known_rankone_directions_by_seed.csv",
+      "stage_path": "inputs/fit_reports/known_rankone_directions_by_seed.csv",
+      "bytes": 31737169,
+      "sha256": "5827379d8c2feb443a97f772568f9d4ff0be7798dc199024e294b3dec5bc6b65",
+      "original_sha256": "5827379d8c2feb443a97f772568f9d4ff0be7798dc199024e294b3dec5bc6b65",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/known_rankone_directions_by_seed/part-001.csv.gz",
+          "rows": 15155
+        },
+        {
+          "path": "data/fit_reports/known_rankone_directions_by_seed/part-002.csv.gz",
+          "rows": 15098
+        },
+        {
+          "path": "data/fit_reports/known_rankone_directions_by_seed/part-003.csv.gz",
+          "rows": 15032
+        },
+        {
+          "path": "data/fit_reports/known_rankone_directions_by_seed/part-004.csv.gz",
+          "rows": 15030
+        },
+        {
+          "path": "data/fit_reports/known_rankone_directions_by_seed/part-005.csv.gz",
+          "rows": 8053
+        }
+      ],
+      "rows": 68368,
+      "header_bytes": 627
+    },
+    {
+      "logical_path": "data/fit_reports/population_basis_reference_by_seed.csv",
+      "stage_path": "inputs/fit_reports/population_basis_reference_by_seed.csv",
+      "bytes": 51569778,
+      "sha256": "471092b8f5c2c1dfd81054aabacca96ee3150f5223d3da0de7225994083274bf",
+      "original_sha256": "471092b8f5c2c1dfd81054aabacca96ee3150f5223d3da0de7225994083274bf",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-001.csv.gz",
+          "rows": 46735
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-002.csv.gz",
+          "rows": 46677
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-003.csv.gz",
+          "rows": 46836
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-004.csv.gz",
+          "rows": 47209
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-005.csv.gz",
+          "rows": 46905
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-006.csv.gz",
+          "rows": 46639
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-007.csv.gz",
+          "rows": 46621
+        },
+        {
+          "path": "data/fit_reports/population_basis_reference_by_seed/part-008.csv.gz",
+          "rows": 17754
+        }
+      ],
+      "rows": 345376,
+      "header_bytes": 241
+    },
+    {
+      "logical_path": "data/fit_reports/J_gram_eigenvalues_by_seed.csv",
+      "stage_path": "inputs/fit_reports/J_gram_eigenvalues_by_seed.csv",
+      "bytes": 55694602,
+      "sha256": "6955421fca9361f5474e723152dc305781e0183d0e562c43172366e4b0704bd8",
+      "original_sha256": "6955421fca9361f5474e723152dc305781e0183d0e562c43172366e4b0704bd8",
+      "transformation": "none",
+      "storage": "csv-parts-gzip",
+      "parts": [
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-001.csv.gz",
+          "rows": 43352
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-002.csv.gz",
+          "rows": 43303
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-003.csv.gz",
+          "rows": 43277
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-004.csv.gz",
+          "rows": 43289
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-005.csv.gz",
+          "rows": 43406
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-006.csv.gz",
+          "rows": 43598
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-007.csv.gz",
+          "rows": 43548
+        },
+        {
+          "path": "data/fit_reports/J_gram_eigenvalues_by_seed/part-008.csv.gz",
+          "rows": 41603
+        }
+      ],
+      "rows": 345376,
+      "header_bytes": 303
+    },
+    {
+      "logical_path": "data/fit_reports/job_status.csv",
+      "stage_path": "inputs/fit_reports/job_status.csv",
+      "bytes": 72739,
+      "sha256": "e2f4e81d80c19848ce325acaf78b3d379213a56b00e0f7ecb19749f84671d2ed",
+      "original_sha256": "e2f4e81d80c19848ce325acaf78b3d379213a56b00e0f7ecb19749f84671d2ed",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/fit_reports/job_status.csv"
+      ]
+    },
+    {
+      "logical_path": "data/fit_reports/report_manifest.txt",
+      "stage_path": "inputs/fit_reports/report_manifest.txt",
+      "bytes": 2584,
+      "sha256": "c63b83c36e2f6bf78a3380193f432f9a48407913d9a1b3fe431026aa96e0189e",
+      "original_sha256": "c63b83c36e2f6bf78a3380193f432f9a48407913d9a1b3fe431026aa96e0189e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "data/fit_reports/report_manifest.txt"
+      ]
+    },
+    {
+      "logical_path": "data/archive_matrix_domain/grid_final_geometry_by_seed.csv",
+      "stage_path": "work/grid_final_geometry_by_seed.csv",
+      "bytes": 13531609,
+      "sha256": "3b92a7c09ec8a38eb6bd1049db20858b57c5c7f1cfbbc9ceb10b9da8afa82035",
+      "original_sha256": "3b92a7c09ec8a38eb6bd1049db20858b57c5c7f1cfbbc9ceb10b9da8afa82035",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/archive_matrix_domain/grid_final_geometry_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "data/archive_matrix_domain/best_rho_by_seed.csv",
+      "stage_path": "outputs/cap10_supplement_20261030/best_rho_by_seed.csv",
+      "bytes": 10099355,
+      "sha256": "2b30e9b6b690c23713c9a482d0acd6b4b4e9b682fa791c6a21113d92f65525f2",
+      "original_sha256": "2b30e9b6b690c23713c9a482d0acd6b4b4e9b682fa791c6a21113d92f65525f2",
+      "transformation": "none",
+      "storage": "gzip",
+      "files": [
+        "data/archive_matrix_domain/best_rho_by_seed.csv.gz"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_dependencies.R",
+      "stage_path": "work/R_dependencies.R",
+      "bytes": 4478,
+      "sha256": "0e11a5823715596d6bbbd376dddf050df5854b28d5f40ace1ce324eee8e0d5f0",
+      "original_sha256": "0e11a5823715596d6bbbd376dddf050df5854b28d5f40ace1ce324eee8e0d5f0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_dependencies.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_design.R",
+      "stage_path": "work/R_design.R",
+      "bytes": 9290,
+      "sha256": "44541884c1e292bb331056672b3086222b9b4392ff20419f3f2ab1efbc85f59d",
+      "original_sha256": "44541884c1e292bb331056672b3086222b9b4392ff20419f3f2ab1efbc85f59d",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_design.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_qmle_backend.R",
+      "stage_path": "work/R_qmle_backend.R",
+      "bytes": 14313,
+      "sha256": "3f9efc28c0eff1bde35a997b0ab8748e3f92ad85ba685cc5eb1063713be50006",
+      "original_sha256": "3f9efc28c0eff1bde35a997b0ab8748e3f92ad85ba685cc5eb1063713be50006",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_qmle_backend.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_grid_qmle_backend.R",
+      "stage_path": "work/R_grid_qmle_backend.R",
+      "bytes": 10693,
+      "sha256": "212cacfe844e158c9e8f4773d5861a783dbfbdd3e5810e1edd25cd3606292636",
+      "original_sha256": "212cacfe844e158c9e8f4773d5861a783dbfbdd3e5810e1edd25cd3606292636",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_grid_qmle_backend.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_grid_reporting.R",
+      "stage_path": "work/R_grid_reporting.R",
+      "bytes": 21992,
+      "sha256": "df6e4040290aeaab7725a955b4f3471efd4c32d3f7de2c6632049ad104ed80ac",
+      "original_sha256": "df6e4040290aeaab7725a955b4f3471efd4c32d3f7de2c6632049ad104ed80ac",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_grid_reporting.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_grid_runner.R",
+      "stage_path": "work/R_grid_runner.R",
+      "bytes": 15358,
+      "sha256": "1477572dbb0c8fc0789d6f128ced138ede2c77a9b2108fae3b840bc0da4072ba",
+      "original_sha256": "1477572dbb0c8fc0789d6f128ced138ede2c77a9b2108fae3b840bc0da4072ba",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_grid_runner.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_runner.R",
+      "stage_path": "work/R_runner.R",
+      "bytes": 16383,
+      "sha256": "d84ecc81d35642356edf49e0bd384060b8ef71e9ad0f158eb5f2a7b798a061e0",
+      "original_sha256": "d84ecc81d35642356edf49e0bd384060b8ef71e9ad0f158eb5f2a7b798a061e0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_runner.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_diagnostics.R",
+      "stage_path": "work/R_diagnostics.R",
+      "bytes": 20286,
+      "sha256": "bd4c901d7fdf814fce1ae42dff1d8809ecf3aea8049fdff3832f324b35668d7a",
+      "original_sha256": "bd4c901d7fdf814fce1ae42dff1d8809ecf3aea8049fdff3832f324b35668d7a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_diagnostics.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_grid_geometry.R",
+      "stage_path": "work/R_grid_geometry.R",
+      "bytes": 22808,
+      "sha256": "ab7251143fa8fd81a50c66a043c335c0d505b90054096154a9da5c48a27a1127",
+      "original_sha256": "ab7251143fa8fd81a50c66a043c335c0d505b90054096154a9da5c48a27a1127",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_grid_geometry.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_local_alignment_core.R",
+      "stage_path": "work/R_local_alignment_core.R",
+      "bytes": 14022,
+      "sha256": "c929e7a9c76ee00e6ba6b90abbc63b2777c5fb461924ab10fae67035c4988dbf",
+      "original_sha256": "c929e7a9c76ee00e6ba6b90abbc63b2777c5fb461924ab10fae67035c4988dbf",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_local_alignment_core.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_lambda_geometry_engine.R",
+      "stage_path": "work/R_lambda_geometry_engine.R",
+      "bytes": 22380,
+      "sha256": "b17de11e71e9e6fd3a4e69165058f0176224a61fceb5743ba96f379225e3a65d",
+      "original_sha256": "b17de11e71e9e6fd3a4e69165058f0176224a61fceb5743ba96f379225e3a65d",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_lambda_geometry_engine.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_lambda_geometry_runner.R",
+      "stage_path": "work/R_lambda_geometry_runner.R",
+      "bytes": 8794,
+      "sha256": "aa8f620ef7153e06526d9238382cb8c744d9f0de56f8765e64c508faa2af73a8",
+      "original_sha256": "aa8f620ef7153e06526d9238382cb8c744d9f0de56f8765e64c508faa2af73a8",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_lambda_geometry_runner.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/run_lambda_geometry_portable.R",
+      "stage_path": "work/run_lambda_geometry_portable.R",
+      "bytes": 999,
+      "sha256": "7d3b6a53b0878f781b582e7efbcce7c154fbd982f5153c93c2ed438aff313921",
+      "original_sha256": "7d3b6a53b0878f781b582e7efbcce7c154fbd982f5153c93c2ed438aff313921",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/run_lambda_geometry_portable.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_lambda_iteration_sensitivity.R",
+      "stage_path": "work/R_lambda_iteration_sensitivity.R",
+      "bytes": 6668,
+      "sha256": "6cf53cb01f5d760e31b7984711a33da2358e6a101c027664de7ffc77aab0018a",
+      "original_sha256": "6cf53cb01f5d760e31b7984711a33da2358e6a101c027664de7ffc77aab0018a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_lambda_iteration_sensitivity.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_validate_lambda_iteration.R",
+      "stage_path": "work/R_validate_lambda_iteration.R",
+      "bytes": 3548,
+      "sha256": "e68577453355a471caef6ca96a0c671e816ec1be2e4f5b4e70ffd74d4633ffcf",
+      "original_sha256": "e68577453355a471caef6ca96a0c671e816ec1be2e4f5b4e70ffd74d4633ffcf",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_validate_lambda_iteration.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/R_validate_lambda_denominator.R",
+      "stage_path": "work/R_validate_lambda_denominator.R",
+      "bytes": 2598,
+      "sha256": "96655680e1a9cbf16e190b7c113c97612dbc9523046937df2806ba02d3ab3447",
+      "original_sha256": "96655680e1a9cbf16e190b7c113c97612dbc9523046937df2806ba02d3ab3447",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/R_validate_lambda_denominator.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/validate_lambda_geometry.R",
+      "stage_path": "work/validate_lambda_geometry.R",
+      "bytes": 18616,
+      "sha256": "d6b66886f00619fe750311fff946d64333548622914302c8e94e98506914ec8c",
+      "original_sha256": "d6b66886f00619fe750311fff946d64333548622914302c8e94e98506914ec8c",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/validate_lambda_geometry.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/validate_lambda_geometry.py",
+      "stage_path": "work/validate_lambda_geometry.py",
+      "bytes": 11445,
+      "sha256": "3b699d64ccbaf6eb28fc0870f852b1c19d7334c4ed98524df88c4af8674f078a",
+      "original_sha256": "3b699d64ccbaf6eb28fc0870f852b1c19d7334c4ed98524df88c4af8674f078a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/validate_lambda_geometry.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/analyze_lambda_geometry.py",
+      "stage_path": "work/analyze_lambda_geometry.py",
+      "bytes": 42120,
+      "sha256": "2c98f987d5e430e09cd26881ef5520e207954f3c48d6debf060d55f5062db66e",
+      "original_sha256": "2c98f987d5e430e09cd26881ef5520e207954f3c48d6debf060d55f5062db66e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/analyze_lambda_geometry.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/analyze_lambda_iteration_sensitivity.py",
+      "stage_path": "work/analyze_lambda_iteration_sensitivity.py",
+      "bytes": 16237,
+      "sha256": "9777237be83730df23452279d7846f651a3c88b24811c305a68866973482c1c9",
+      "original_sha256": "9777237be83730df23452279d7846f651a3c88b24811c305a68866973482c1c9",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/analyze_lambda_iteration_sensitivity.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/build_lambda_manuscript_tables.py",
+      "stage_path": "work/build_lambda_manuscript_tables.py",
+      "bytes": 36073,
+      "sha256": "3b6a3b8b7710d848cea00494a8882f9277df5f41db2a70887e41b47944573519",
+      "original_sha256": "3b6a3b8b7710d848cea00494a8882f9277df5f41db2a70887e41b47944573519",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/build_lambda_manuscript_tables.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/build_lambda_denominator_table.py",
+      "stage_path": "work/build_lambda_denominator_table.py",
+      "bytes": 5447,
+      "sha256": "22251de00e86283965583e82b1e8c9c0670ae7a9a6d39988ae0173f2d4f9a176",
+      "original_sha256": "22251de00e86283965583e82b1e8c9c0670ae7a9a6d39988ae0173f2d4f9a176",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/build_lambda_denominator_table.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/plot_lambda_geometry.py",
+      "stage_path": "work/plot_lambda_geometry.py",
+      "bytes": 12737,
+      "sha256": "bb938b83bf052c6bfe747d1c2496139ad64006ce72d3d55b98f0bb95b1ff12c4",
+      "original_sha256": "bb938b83bf052c6bfe747d1c2496139ad64006ce72d3d55b98f0bb95b1ff12c4",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/plot_lambda_geometry.py"
+      ]
+    },
+    {
+      "logical_path": "code/work/export_lambda_source_provenance.R",
+      "stage_path": "work/export_lambda_source_provenance.R",
+      "bytes": 1459,
+      "sha256": "440a8dd96305f362bf20ba6d159de73ca751f9985af869199d12adec68719966",
+      "original_sha256": "440a8dd96305f362bf20ba6d159de73ca751f9985af869199d12adec68719966",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/export_lambda_source_provenance.R"
+      ]
+    },
+    {
+      "logical_path": "code/work/grid_final_spectra_analysis.py",
+      "stage_path": "work/grid_final_spectra_analysis.py",
+      "bytes": 8700,
+      "sha256": "b5acc74dbf5053b4487d3498c408b6bfad209d814c53eb145c86711195665321",
+      "original_sha256": "b5acc74dbf5053b4487d3498c408b6bfad209d814c53eb145c86711195665321",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/work/grid_final_spectra_analysis.py"
+      ]
+    },
+    {
+      "logical_path": "code/CP_QMLE_grid_20_40_80_100seeds.R",
+      "stage_path": "outputs/CP_QMLE_grid_20_40_80_100seeds.R",
+      "bytes": 141825,
+      "sha256": "270abb1797c27c9acf4dca6f3f6bb2f64daa948de3fea163dafb73bb75aae79a",
+      "original_sha256": "270abb1797c27c9acf4dca6f3f6bb2f64daa948de3fea163dafb73bb75aae79a",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "code/CP_QMLE_grid_20_40_80_100seeds.R"
+      ]
+    },
+    {
+      "logical_path": "report/supplementary_data.tex",
+      "stage_path": null,
+      "bytes": 746863,
+      "sha256": "6891fdd1b40298be5e7b65ff71fe835bd4554e572b49442280e89795cc20a446",
+      "original_sha256": "6891fdd1b40298be5e7b65ff71fe835bd4554e572b49442280e89795cc20a446",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/supplementary_data.tex"
+      ]
+    },
+    {
+      "logical_path": "report/images/center_5deg_10deg_trends_40.png",
+      "stage_path": null,
+      "bytes": 326796,
+      "sha256": "613c4693abd31932893a5c4faebceda425985d15df1ee6656775aae0d05bdc24",
+      "original_sha256": "613c4693abd31932893a5c4faebceda425985d15df1ee6656775aae0d05bdc24",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/center_5deg_10deg_trends_40.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/diagnostic_trends_40.png",
+      "stage_path": null,
+      "bytes": 205213,
+      "sha256": "43d4799dd20629af658569c3a3723c3446d33993c4c78425026a88ec89cb4ffc",
+      "original_sha256": "43d4799dd20629af658569c3a3723c3446d33993c4c78425026a88ec89cb4ffc",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/diagnostic_trends_40.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_angle.png",
+      "stage_path": null,
+      "bytes": 295950,
+      "sha256": "1a083db499b839c435164452c11670336abf6b8999da67e48207332f7962914e",
+      "original_sha256": "1a083db499b839c435164452c11670336abf6b8999da67e48207332f7962914e",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_angle.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_cap10.png",
+      "stage_path": null,
+      "bytes": 265344,
+      "sha256": "1d8b5e62b34a497ad016aa0de139d8ee12e9da688e8805adc9367d45b369e23d",
+      "original_sha256": "1d8b5e62b34a497ad016aa0de139d8ee12e9da688e8805adc9367d45b369e23d",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_cap10.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_Jnor.png",
+      "stage_path": null,
+      "bytes": 230764,
+      "sha256": "a771e223030de25ade344a2253d9a3499d2c511a2a7c9c4b0725edbbda8750e3",
+      "original_sha256": "a771e223030de25ade344a2253d9a3499d2c511a2a7c9c4b0725edbbda8750e3",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_Jnor.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_Jorig.png",
+      "stage_path": null,
+      "bytes": 230437,
+      "sha256": "1ef5abfbec896e8360bba4692827bef7b803ef3e31998d70e41f94d3ff6af203",
+      "original_sha256": "1ef5abfbec896e8360bba4692827bef7b803ef3e31998d70e41f94d3ff6af203",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_Jorig.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_localrate.png",
+      "stage_path": null,
+      "bytes": 290450,
+      "sha256": "849deca77c7e0119a40a93fa7a5f5c01deb9957c23f8e4b7115d4b067737ce6c",
+      "original_sha256": "849deca77c7e0119a40a93fa7a5f5c01deb9957c23f8e4b7115d4b067737ce6c",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_localrate.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_physicalcos.png",
+      "stage_path": null,
+      "bytes": 225929,
+      "sha256": "093c60cffd0f9161c365f374955dbe1dfb3ee989630309829b129c39498346c5",
+      "original_sha256": "093c60cffd0f9161c365f374955dbe1dfb3ee989630309829b129c39498346c5",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_physicalcos.png"
+      ]
+    },
+    {
+      "logical_path": "report/images/lambda_grid_rho.png",
+      "stage_path": null,
+      "bytes": 235338,
+      "sha256": "a3ea0bf221953444ee5831fde8d6a60deda9abfbe0e4db8943ebe5bdb9fe2b60",
+      "original_sha256": "a3ea0bf221953444ee5831fde8d6a60deda9abfbe0e4db8943ebe5bdb9fe2b60",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/images/lambda_grid_rho.png"
+      ]
+    },
+    {
+      "logical_path": "report/reference.bib",
+      "stage_path": null,
+      "bytes": 24361,
+      "sha256": "91057762cabac17e66b4c5d950b0f4ac5467ba6b3f79fe4ce4de3a6093dc52f9",
+      "original_sha256": "91057762cabac17e66b4c5d950b0f4ac5467ba6b3f79fe4ce4de3a6093dc52f9",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/reference.bib"
+      ]
+    },
+    {
+      "logical_path": "report/agsm_jasa_refs.bst",
+      "stage_path": null,
+      "bytes": 26475,
+      "sha256": "6530799193d641b8d6c0433b7811990284e6fb35ce4995cc341474d1425185b0",
+      "original_sha256": "6530799193d641b8d6c0433b7811990284e6fb35ce4995cc341474d1425185b0",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "report/agsm_jasa_refs.bst"
+      ]
+    },
+    {
+      "logical_path": "paper/p40_q40_T100_200_400_means.csv",
+      "stage_path": null,
+      "bytes": 2121,
+      "sha256": "871d117c63fc1bc06dd210d28d708b82804f416a9c412f4ecf2d94c655ee6e9b",
+      "original_sha256": "871d117c63fc1bc06dd210d28d708b82804f416a9c412f4ecf2d94c655ee6e9b",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "paper/p40_q40_T100_200_400_means.csv"
+      ]
+    },
+    {
+      "logical_path": "paper/p40_q40_T100_200_400_table.tex",
+      "stage_path": null,
+      "bytes": 2663,
+      "sha256": "e09c04139820f3c15c5913a4ae1edccfb475f44502466bd1c1b8fe428cf1ec51",
+      "original_sha256": "e09c04139820f3c15c5913a4ae1edccfb475f44502466bd1c1b8fe428cf1ec51",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "paper/p40_q40_T100_200_400_table.tex"
+      ]
+    },
+    {
+      "logical_path": "paper/p40_q40_T100_200_400_table_audit.csv",
+      "stage_path": null,
+      "bytes": 5126,
+      "sha256": "8601b1080b786699f6b304449915e5bc14debba48639c4dcc9ca9d5623a66b50",
+      "original_sha256": "8601b1080b786699f6b304449915e5bc14debba48639c4dcc9ca9d5623a66b50",
+      "transformation": "none",
+      "storage": "plain",
+      "files": [
+        "paper/p40_q40_T100_200_400_table_audit.csv"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The table and CSV are the mean-only results selected for the paper supplement: p=q=40, T=100,200,400, three designs and 100 seeds per cell. The TeX file is a table snippet, not a standalone manuscript. The full experiment remains under data/.

@@ -1,0 +1,56 @@
+{
+  "primary": {
+    "rows": 10796,
+    "source_files": [
+      "parts\\shard01_primary.csv",
+      "parts\\shard02_primary.csv",
+      "parts\\shard03_primary.csv",
+      "parts\\shard04_primary.csv",
+      "parts\\shard05_primary.csv",
+      "parts\\shard06_primary.csv",
+      "parts\\shard07_primary.csv",
+      "parts\\shard08_primary.csv",
+      "parts\\shard09_primary.csv",
+      "parts\\shard10_primary.csv",
+      "parts\\shard11_primary.csv",
+      "parts\\shard12_primary.csv"
+    ],
+    "identical_duplicate_rows_removed": 0
+  },
+  "caps": {
+    "rows": 50577,
+    "source_files": [
+      "parts\\shard01_caps.csv",
+      "parts\\shard02_caps.csv",
+      "parts\\shard03_caps.csv",
+      "parts\\shard04_caps.csv",
+      "parts\\shard05_caps.csv",
+      "parts\\shard06_caps.csv",
+      "parts\\shard07_caps.csv",
+      "parts\\shard08_caps.csv",
+      "parts\\shard09_caps.csv",
+      "parts\\shard10_caps.csv",
+      "parts\\shard11_caps.csv",
+      "parts\\shard12_caps.csv"
+    ],
+    "identical_duplicate_rows_removed": 0
+  },
+  "pairs": {
+    "rows": 552507,
+    "source_files": [
+      "parts\\shard01_pairs.csv",
+      "parts\\shard02_pairs.csv",
+      "parts\\shard03_pairs.csv",
+      "parts\\shard04_pairs.csv",
+      "parts\\shard05_pairs.csv",
+      "parts\\shard06_pairs.csv",
+      "parts\\shard07_pairs.csv",
+      "parts\\shard08_pairs.csv",
+      "parts\\shard09_pairs.csv",
+      "parts\\shard10_pairs.csv",
+      "parts\\shard11_pairs.csv",
+      "parts\\shard12_pairs.csv"
+    ],
+    "identical_duplicate_rows_removed": 0
+  }
+}

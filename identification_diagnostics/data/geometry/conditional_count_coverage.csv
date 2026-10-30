@@ -1,0 +1,13 @@
+regime,T,n_available,n_finite_Q,n_local_within10
+boundary,100,900,900,391
+boundary,200,900,900,617
+boundary,400,900,900,783
+boundary,800,900,900,880
+exterior,100,900,900,91
+exterior,200,900,899,82
+exterior,400,900,900,184
+exterior,800,900,900,554
+interior,100,896,896,1
+interior,200,900,900,0
+interior,400,900,900,0
+interior,800,900,900,0

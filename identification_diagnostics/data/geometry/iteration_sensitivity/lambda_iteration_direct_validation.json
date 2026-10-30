@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "continued_fit_records": 31,
+  "unique_configuration_count": 28,
+  "common_records": 28,
+  "separate_adaptive_records": 3,
+  "points": 939,
+  "maximum_Frobenius_error": 6.66133814775094e-16,
+  "maximum_E1_direct_error": 1.94289029309402e-16,
+  "maximum_rho_direct_error": 2.02112632186058e-14,
+  "maximum_lambda_cosine": 0.900000000000002,
+  "physical_cosine_gt090_points": 790,
+  "maximum_Q_direct_error": 0.0,
+  "maximum_Delta_direct_error": 0.0,
+  "source_checksums_unchanged": true
+}

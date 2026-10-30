@@ -1,0 +1,13 @@
+{
+  "source_sha256": "3425150244c23372213c975aeb47771ae9e3173367aeb3b8cd636b2a2ee5c209",
+  "fits": 10796,
+  "cells": 108,
+  "display_rows": 12,
+  "normalization": "matrix Frobenius norm 1",
+  "denominator": "norm((lambda_i*lambda_j)_{i<j})",
+  "extra_thresholds_applied": false,
+  "maximum_lower_bound_violation": 0.0,
+  "maximum_upper_bound_violation": 0.0,
+  "H_over_E1_min": 0.9811753473496232,
+  "H_over_E1_max": 0.99999942410562
+}

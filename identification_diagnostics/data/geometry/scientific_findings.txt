@@ -1,0 +1,82 @@
+New lambda-axis geometry: actual numerical findings
+Complete dataset: True; matched saved fits: 10796.
+Lambda-axis cosine is constrained to .90; physical loading cosine is only reported.
+
+Finite-sample AUC ranges across dimension pairs (fixed first-score-smaller direction):
+T=100; E1_at_rho; boundary<interior: [0.911800,1.000000], AUC>=.95 in 8/9 pairs, AUC<.5 in 0.
+T=200; E1_at_rho; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; E1_at_rho; exterior<boundary: [0.007000,0.090800], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; E1_at_rho; exterior<boundary: [0.000700,0.033600], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; E1_at_rho; exterior<interior: [0.029900,0.290729], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; E1_at_rho; exterior<interior: [0.040000,0.498300], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; E1_cap10; boundary<interior: [0.963200,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; E1_cap10; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; E1_cap10; exterior<boundary: [0.000200,0.065100], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; E1_cap10; exterior<boundary: [0.000000,0.010200], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; E1_cap10; exterior<interior: [0.146000,0.571875], AUC>=.95 in 0/9 pairs, AUC<.5 in 8.
+T=200; E1_cap10; exterior<interior: [0.240900,0.970100], AUC>=.95 in 1/9 pairs, AUC<.5 in 6.
+T=100; E1_cap_090; boundary<interior: [0.944000,1.000000], AUC>=.95 in 8/9 pairs, AUC<.5 in 0.
+T=200; E1_cap_090; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; E1_cap_090; exterior<boundary: [0.002200,0.074700], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; E1_cap_090; exterior<boundary: [0.000100,0.018800], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; E1_cap_090; exterior<interior: [0.033000,0.369792], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; E1_cap_090; exterior<interior: [0.087400,0.832700], AUC>=.95 in 0/9 pairs, AUC<.5 in 8.
+T=100; E1_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; E1_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; E1_min; exterior<boundary: [0.585900,0.928000], AUC>=.95 in 0/9 pairs, AUC<.5 in 0.
+T=200; E1_min; exterior<boundary: [0.229000,0.846400], AUC>=.95 in 0/9 pairs, AUC<.5 in 1.
+T=100; E1_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; E1_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; J_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; J_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; J_min; exterior<boundary: [0.146800,0.805400], AUC>=.95 in 0/9 pairs, AUC<.5 in 3.
+T=200; J_min; exterior<boundary: [0.005700,0.590900], AUC>=.95 in 0/9 pairs, AUC<.5 in 7.
+T=100; J_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; J_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; J_relative_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; J_relative_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; J_relative_min; exterior<boundary: [0.000000,0.170900], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=200; J_relative_min; exterior<boundary: [0.000000,0.036100], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; J_relative_min; exterior<interior: [0.998000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; J_relative_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; center_to_E1_nearest_deg_090; boundary<interior: [0.591700,1.000000], AUC>=.95 in 6/9 pairs, AUC<.5 in 0.
+T=200; center_to_E1_nearest_deg_090; boundary<interior: [0.934000,1.000000], AUC>=.95 in 8/9 pairs, AUC<.5 in 0.
+T=100; center_to_E1_nearest_deg_090; exterior<boundary: [0.084900,0.610000], AUC>=.95 in 0/9 pairs, AUC<.5 in 8.
+T=200; center_to_E1_nearest_deg_090; exterior<boundary: [0.028200,0.293500], AUC>=.95 in 0/9 pairs, AUC<.5 in 9.
+T=100; center_to_E1_nearest_deg_090; exterior<interior: [0.890000,0.990300], AUC>=.95 in 8/9 pairs, AUC<.5 in 0.
+T=200; center_to_E1_nearest_deg_090; exterior<interior: [0.957900,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; pair_joint_max; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; pair_joint_max; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; pair_joint_max; exterior<boundary: [0.229600,0.734800], AUC>=.95 in 0/9 pairs, AUC<.5 in 3.
+T=200; pair_joint_max; exterior<boundary: [0.060800,0.560900], AUC>=.95 in 0/9 pairs, AUC<.5 in 7.
+T=100; pair_joint_max; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; pair_joint_max; exterior<interior: [0.990000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; rho_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; rho_min; boundary<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=100; rho_min; exterior<boundary: [0.741900,0.972600], AUC>=.95 in 5/9 pairs, AUC<.5 in 0.
+T=200; rho_min; exterior<boundary: [0.786700,0.980400], AUC>=.95 in 5/9 pairs, AUC<.5 in 0.
+T=100; rho_min; exterior<interior: [0.994000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+T=200; rho_min; exterior<interior: [1.000000,1.000000], AUC>=.95 in 9/9 pairs, AUC<.5 in 0.
+
+Physical closeness at the independently lowest E1 (descriptive counts; shared seeds across dimensions):
+boundary,T=100: max-loading-cosine mean=0.993998; >.90: 900/900; >.95: 900/900; >.99: 900/900.
+boundary,T=200: max-loading-cosine mean=0.994029; >.90: 900/900; >.95: 900/900; >.99: 900/900.
+boundary,T=400: max-loading-cosine mean=0.994052; >.90: 900/900; >.95: 900/900; >.99: 900/900.
+boundary,T=800: max-loading-cosine mean=0.994070; >.90: 900/900; >.95: 900/900; >.99: 900/900.
+exterior,T=100: max-loading-cosine mean=0.983556; >.90: 863/900; >.95: 829/900; >.99: 553/900.
+exterior,T=200: max-loading-cosine mean=0.984786; >.90: 879/900; >.95: 840/900; >.99: 595/900.
+exterior,T=400: max-loading-cosine mean=0.985274; >.90: 866/900; >.95: 856/900; >.99: 668/900.
+exterior,T=800: max-loading-cosine mean=0.986584; >.90: 873/900; >.95: 870/900; >.99: 748/900.
+interior,T=100: max-loading-cosine mean=0.977794; >.90: 896/896; >.95: 895/896; >.99: 0/896.
+interior,T=200: max-loading-cosine mean=0.977886; >.90: 900/900; >.95: 900/900; >.99: 0/900.
+interior,T=400: max-loading-cosine mean=0.977909; >.90: 900/900; >.95: 900/900; >.99: 0/900.
+interior,T=800: max-loading-cosine mean=0.977906; >.90: 900/900; >.95: 900/900; >.99: 0/900.
+
+Maximum change in domain-independent J/subspace/covariance cell means: 0.
+The lambda-axis domain and matrix-angle domain are different feasible sets.
+Physical loading cosine above .90 is an observed auxiliary value, not a lambda-domain violation.
+A small E1 with physical cosine near one does not by itself exhibit a well-separated additional matrix direction.
+Close independent candidates and positive residuals do not certify a common zero.
+All AUC directions are fixed first-score-smaller contrasts; no cell-wise orientation maximization is used.
+Pooled physical counts across dimensions are descriptive and do not create independent additional seeds.
+Finite sample trajectories do not prove asymptotic limits or QMLE consistency.

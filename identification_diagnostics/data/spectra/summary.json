@@ -1,0 +1,147 @@
+{
+  "by_regime_T": [
+    {
+      "regime": "boundary",
+      "T": 100,
+      "J_min": 0.01928992409986311,
+      "J_relative_min": 0.014086669145021564,
+      "matching_to_known_set_mean": 0.9990862163840669,
+      "matching_to_known_set_min": 0.9962503052176198,
+      "Mx_min_eigenvalue": 1.0142712477671778,
+      "subspace_error": 0.038287978800320324
+    },
+    {
+      "regime": "boundary",
+      "T": 200,
+      "J_min": 0.014366006280506388,
+      "J_relative_min": 0.010489276086669084,
+      "matching_to_known_set_mean": 0.9994167274398639,
+      "matching_to_known_set_min": 0.9974744641607338,
+      "Mx_min_eigenvalue": 1.0938312726588928,
+      "subspace_error": 0.02670460293611941
+    },
+    {
+      "regime": "boundary",
+      "T": 400,
+      "J_min": 0.010785410979618524,
+      "J_relative_min": 0.007869013815224743,
+      "matching_to_known_set_mean": 0.999634614852218,
+      "matching_to_known_set_min": 0.9983669978904252,
+      "Mx_min_eigenvalue": 1.1562013554719162,
+      "subspace_error": 0.01883308338545094
+    },
+    {
+      "regime": "boundary",
+      "T": 800,
+      "J_min": 0.007977453302599488,
+      "J_relative_min": 0.005817972993087408,
+      "matching_to_known_set_mean": 0.9997897706308172,
+      "matching_to_known_set_min": 0.9990439442874193,
+      "Mx_min_eigenvalue": 1.2064168411382121,
+      "subspace_error": 0.01325808221221556
+    },
+    {
+      "regime": "exterior",
+      "T": 100,
+      "J_min": 0.019371261031995945,
+      "J_relative_min": 0.02631153060567096,
+      "matching_to_known_set_mean": 0.9958201167757953,
+      "matching_to_known_set_min": 0.9834786165275032,
+      "Mx_min_eigenvalue": 0.9171623885193,
+      "subspace_error": 0.052768981916070934
+    },
+    {
+      "regime": "exterior",
+      "T": 200,
+      "J_min": 0.017479297765325516,
+      "J_relative_min": 0.02404278733014226,
+      "matching_to_known_set_mean": 0.9985408158947116,
+      "matching_to_known_set_min": 0.9941790713244713,
+      "Mx_min_eigenvalue": 1.0269705646581673,
+      "subspace_error": 0.036489511722731814
+    },
+    {
+      "regime": "exterior",
+      "T": 400,
+      "J_min": 0.01640625326014242,
+      "J_relative_min": 0.022666263234465214,
+      "matching_to_known_set_mean": 0.9994520139933343,
+      "matching_to_known_set_min": 0.9978870231814508,
+      "Mx_min_eigenvalue": 1.121616609712792,
+      "subspace_error": 0.025716827315396783
+    },
+    {
+      "regime": "exterior",
+      "T": 800,
+      "J_min": 0.015744368310947603,
+      "J_relative_min": 0.02176170982996395,
+      "matching_to_known_set_mean": 0.9997990959335861,
+      "matching_to_known_set_min": 0.9992879775391527,
+      "Mx_min_eigenvalue": 1.181184274794749,
+      "subspace_error": 0.01812513341220675
+    },
+    {
+      "regime": "interior",
+      "T": 100,
+      "J_min": 0.0884424913813393,
+      "J_relative_min": 0.06273401006987915,
+      "matching_to_known_set_mean": 0.9997196941675961,
+      "matching_to_known_set_min": 0.9993552004278798,
+      "Mx_min_eigenvalue": 0.9107896943872495,
+      "subspace_error": 0.023366072443477343
+    },
+    {
+      "regime": "interior",
+      "T": 200,
+      "J_min": 0.08770076246010869,
+      "J_relative_min": 0.06214749160710377,
+      "matching_to_known_set_mean": 0.9998693113632783,
+      "matching_to_known_set_min": 0.9997110282813921,
+      "Mx_min_eigenvalue": 1.0171395385121065,
+      "subspace_error": 0.01623598542288618
+    },
+    {
+      "regime": "interior",
+      "T": 400,
+      "J_min": 0.08735998402623926,
+      "J_relative_min": 0.06189268724631536,
+      "matching_to_known_set_mean": 0.9999362357317169,
+      "matching_to_known_set_min": 0.9998609840303925,
+      "Mx_min_eigenvalue": 1.0920762805661695,
+      "subspace_error": 0.01134412002101427
+    },
+    {
+      "regime": "interior",
+      "T": 800,
+      "J_min": 0.087185927881703,
+      "J_relative_min": 0.06176435790036616,
+      "matching_to_known_set_mean": 0.9999680645718282,
+      "matching_to_known_set_min": 0.9999291718960183,
+      "Mx_min_eigenvalue": 1.1179413612740365,
+      "subspace_error": 0.007992744873940201
+    }
+  ],
+  "exterior_extra_selected_by_T": [
+    {
+      "T": 100,
+      "sum": 104,
+      "mean": 0.11555555555555555
+    },
+    {
+      "T": 200,
+      "sum": 92,
+      "mean": 0.10222222222222223
+    },
+    {
+      "T": 400,
+      "sum": 65,
+      "mean": 0.07222222222222222
+    },
+    {
+      "T": 800,
+      "sum": 46,
+      "mean": 0.051111111111111114
+    }
+  ],
+  "J_min_ranges": "{\"('J_min', 'min')\":{\"('boundary', 100)\":0.007883322,\"('boundary', 200)\":0.0059150989,\"('boundary', 400)\":0.0042006092,\"('boundary', 800)\":0.0024900225,\"('exterior', 100)\":0.0053790044,\"('exterior', 200)\":0.0055442249,\"('exterior', 400)\":0.0086246549,\"('exterior', 800)\":0.0109580869,\"('interior', 100)\":0.0760935408,\"('interior', 200)\":0.0799423936,\"('interior', 400)\":0.081516566,\"('interior', 800)\":0.0831544874},\"('J_min', 'max')\":{\"('boundary', 100)\":0.0360103315,\"('boundary', 200)\":0.0292662653,\"('boundary', 400)\":0.0235687385,\"('boundary', 800)\":0.0188775435,\"('exterior', 100)\":0.0602333399,\"('exterior', 200)\":0.0515527606,\"('exterior', 400)\":0.0459437134,\"('exterior', 800)\":0.0422874325,\"('interior', 100)\":0.0986134387,\"('interior', 200)\":0.0960924929,\"('interior', 400)\":0.0924269055,\"('interior', 800)\":0.0908370104},\"('J_relative_min', 'min')\":{\"('boundary', 100)\":0.0057439382,\"('boundary', 200)\":0.0043113551,\"('boundary', 400)\":0.0030641024,\"('boundary', 800)\":0.0018170271,\"('exterior', 100)\":0.0079354574,\"('exterior', 200)\":0.0078558939,\"('exterior', 400)\":0.0110759331,\"('exterior', 800)\":0.0138919145,\"('interior', 100)\":0.0530549729,\"('interior', 200)\":0.0559631871,\"('interior', 400)\":0.0573765106,\"('interior', 800)\":0.0587891184},\"('J_relative_min', 'max')\":{\"('boundary', 100)\":0.0268984085,\"('boundary', 200)\":0.0219861463,\"('boundary', 400)\":0.0176171173,\"('boundary', 800)\":0.0140692069,\"('exterior', 100)\":0.0581722282,\"('exterior', 200)\":0.0506958955,\"('exterior', 400)\":0.0487211087,\"('exterior', 800)\":0.0412276449,\"('interior', 100)\":0.0713503348,\"('interior', 200)\":0.0691657713,\"('interior', 400)\":0.065920846,\"('interior', 800)\":0.064518117}}"
+}

@@ -1,0 +1,60 @@
+\begin{table}[p]
+\begingroup
+\spacingset{1.0}
+\centering\footnotesize
+\caption{Mean diagnostic values for $p=q=40$, based on 100 seeds per cell.}
+\label{s23:lambda:finite:geometry}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\textit{Panel A: polynomial and rank-one residuals}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrrrrr}
+\toprule
+Design & $T$ & $\rho_{\mathrm{ind},\min}$ & Independent $(E_1)_{\min}$ & $E_{1,\mathrm{center}}$ & $\rho_{\mathrm{ind}}(\hat\lambda_E)$ & $E_{1,10}$ & $Q_T(5^\circ)$\\
+\midrule
+Interior & 100 & 0.057783 & 0.028499 & 0.044036 & 0.075747 & 0.038966 & 0.112123\\
+ & 200 & 0.056654 & 0.028087 & 0.043073 & 0.074657 & 0.038170 & 0.109801\\
+ & 400 & 0.056070 & 0.027830 & 0.042506 & 0.074007 & 0.037684 & 0.109213\\
+\addlinespace[2pt]
+Boundary & 100 & 0.014153 & 0.007801 & 0.012759 & 0.015497 & 0.009561 & 0.021850\\
+ & 200 & 0.010397 & 0.005466 & 0.006849 & 0.010896 & 0.005716 & 0.015526\\
+ & 400 & 0.007871 & 0.004053 & 0.004453 & 0.008097 & 0.004088 & 0.010655\\
+\addlinespace[2pt]
+Exterior & 100 & 0.005325 & 0.005816 & 0.091274 & 0.021305 & 0.046018 & 0.022208\\
+ & 200 & 0.003630 & 0.005194 & 0.063113 & 0.019854 & 0.037551 & 0.020547\\
+ & 400 & 0.002361 & 0.004636 & 0.043188 & 0.018930 & 0.030051 & 0.019006\\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\medskip
+\textit{Panel B: angular correspondence and loading geometry}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrrr}
+\toprule
+Design & $T$ & $\widehat j_{\mathrm{nor}}$ & $\Delta_T$ (degrees) & $c_{\mathrm{mat}}(\hat\lambda_E)$ & $c_{\mathrm{mat}}$ at $E_{1,10}$\\
+\midrule
+Interior & 100 & 0.062975 & 28.452 & 0.977907 & 0.918707\\
+ & 200 & 0.062337 & 28.532 & 0.977941 & 0.919406\\
+ & 400 & 0.062016 & 28.636 & 0.977938 & 0.919983\\
+\addlinespace[2pt]
+Boundary & 100 & 0.013555 & 12.082 & 0.994023 & 0.989704\\
+ & 200 & 0.010017 & 5.651 & 0.994020 & 0.993136\\
+ & 400 & 0.007504 & 2.619 & 0.994042 & 0.993841\\
+\addlinespace[2pt]
+Exterior & 100 & 0.025481 & 22.151 & 0.987081 & 0.824091\\
+ & 200 & 0.023801 & 22.796 & 0.987743 & 0.828210\\
+ & 400 & 0.022144 & 21.941 & 0.988092 & 0.833960\\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\medskip
+\begin{minipage}{0.98\linewidth}\footnotesize
+Here $\hat\lambda_E$ is the independently lowest-$E_1$ candidate,
+whereas $\Delta_T$ uses the nearest independent $E_1$ candidate.
+All values are unsquared, and $E_1$ is not multiplied by 100.
+Jacobian ratios are computed within each seed before averaging.
+\end{minipage}
+\endgroup
+\end{table}
